@@ -1,0 +1,110 @@
+<Alloy>
+	<Window id="crewDetailWindow" title="Crew Detail" height="100%"  width="100%">
+		<View  backgroundColor="transparent"  height="100%"  width="100%" >
+			<View id="imageSectionView" layout="horizontal" top="0" height="25%" width="100%" >
+                <ImageView id="image" left="41%" top="10%" image="" height="190" width="auto" borderRadius="5" borderColor ="white" borderWidth= "2"/>				
+				<ImageView id="labelEmergency" height="60" width="170" left="9%" image="/images/btn_emergency.png"></ImageView>
+			</View>
+			
+			<ScrollView top="25%" layout="vertical" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="75%" width="100%">
+
+				<View  height="35%" width="100%" layout="vertical" >
+					<View width="100%"  height="25%" layout="horizontal">
+						<Label width="175" left="10%"  height="100%" class="LabelShow">Person ID : </Label>
+						<Label height="100%" class="LabelShow2" id="crewPersonId"></Label>
+					</View>
+					
+					<View width="100%"  height="25%" layout="horizontal">
+						<Label width="175" left="10%"  height="100%" class="LabelShow">Name : </Label>
+						<Label height="100%"  class="LabelShow2" id="crewName"></Label>
+					</View>
+					
+                    <View width="100%"  height="25%" layout="horizontal">
+                        <Label width="175" left="10%"  height="100%" class="LabelShow">Nickname : </Label>
+                        <Label height="100%"  class="LabelShow2" id="crewNickname"></Label>
+                    </View>
+
+					<View width="100%"  height="25%" layout="horizontal">
+						<Label width="175" left="10%"  height="100%" class="LabelShow">Third Languages : </Label>
+						<Label class="LabelShow2"  height="100%" id="crewLanguages">Thai</Label>
+					</View>
+				</View>
+				
+				<View  height="50%" width="100%"  layout="horizontal" >
+					<View height="100%" width="50%" layout="vertical"  >
+						<View top="5%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="30%">
+								<Label  height="100%"  class="LabelShow" right="0">Flight : </Label>
+							</View>
+			
+							<View left="31%" height="100%"  width="67%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="rtFlightAndDate"></Label>
+							</View>
+						</View>
+						<View top="10%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="55%">
+								<Label  height="100%"  class="LabelShow" right="0">Rank : </Label>
+							</View>
+			
+							<View left="56%" height="100%"  width="44%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="rank"></Label>
+							</View>
+						</View>
+						<View top="10%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="52%">
+								<Label  height="100%" color="white" class="LabelShow" right="0">Duty : </Label>
+							</View>
+			
+							<View left="53%" height="100%"  width="46%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="duty"></Label>
+							</View>
+						</View>
+					</View>
+					<View height="100%" width="50%" layout="vertical" >
+
+						<View top="5%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="61%">
+								<Label  height="100%"  class="LabelShow" right="0">Duty code : </Label>
+							</View>
+							<View left="62%" height="100%"  width="37%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="dutyCode"></Label>
+							</View>
+						</View>
+						<View top="10%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="65%">
+								<Label  height="100%"  class="LabelShow" right="0">Acting Rank : </Label>
+							</View>
+							<View left="66%" height="100%"  width="35%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="actingRank"></Label>
+							</View>
+						</View>
+						<View top="10%"  height="20%" backgroundColor="#784E96" borderRadius='10' left="10%" right="10%" layout="herizontal">
+							<View  height="100%" left="0" width="61%">
+								<Label  height="100%"  class="LabelShow" right="0">POS FLY : </Label>
+							</View>
+							<View left="62%" height="100%"  width="39%">
+								<Label left="0"  height="100%"  class="LabelShow2" id="posFly"></Label>
+							</View>
+						</View>
+					</View>
+				</View>
+				<View id="lebelHeaderSectionOver"  height="20%" width="100%" layout="vertical" >
+                    <ImageView id="showCrewAppraisal" image = "/images/btn_view_appraisal.png" width="200" height="50" borderRadius="25"></ImageView>
+					<!-- <View  height="50" backgroundImage="images/bg_header_section.png">
+						<Label id="lebelHeaderSection"  left="5%" height="100%" >Current Appraisal</Label>
+					</View>
+					
+					<View   width="100%" layout="vertical">
+						<Label  id="M2" >Under Construction</Label>
+					</View> -->				
+			    </View>
+				
+			</ScrollView>
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

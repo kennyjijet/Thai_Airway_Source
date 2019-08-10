@@ -1,0 +1,65 @@
+
+"TableView": {
+	scrollable: false,
+	separatorColor: "#ffffff"
+}
+
+"#table1":{
+	width : "49.85%",
+			scrollable : false,
+			top : "0px",
+			bottom : "00px",
+			left : "0px",
+			id : "allrop",
+			separatorColor : "#ffffff",
+}
+"#table2":{
+	width : "49.85%",
+			scrollable : false,
+			top : "0px",
+			bottom : "00px",
+			left : "0px",
+			id : "allrop",
+			separatorColor : "#ffffff",
+}
+
+"#tableViewRow1" : {
+	touchEnabled : true,
+			height : "100%",
+			id : "allrop",
+			width : "100%",
+			selectedBackgroundColor : "#33ffffff"
+}
+
+"#tableViewRow2" : {
+	touchEnabled : false,
+			height : "100%",
+			id : "allrop",
+			width : "100%",
+			selectedBackgroundColor : "#c6168d"
+}
+
+
+
+"#label1" :{
+	textAlign : "Ti.UI.TEXT_ALIGNMENT_CENTER",
+			id : "allrop",
+			height : "100%",
+			font : {
+			fontSize : "20px",
+			fontFamily : 'Lucida Grande-Bold',
+			fontWeight : 'bold'
+		},
+			
+}
+"#label2" :{
+	textAlign : "Ti.UI.TEXT_ALIGNMENT_CENTER",
+			id : "allrop",
+			height : "100%",
+			font : {
+			fontSize : "20px",
+			fontFamily : 'Lucida Grande-Bold',
+			fontWeight : 'bold'
+		},
+			
+}

@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="loginWindow" title="Login to THAI Airways" class="containerLogin">
+		<View backgroundColor="#3b0059" backgroundImage="/images/bg_home.png" height="100%" width="100%" zIndex="100">
+			<View layout="vertical" width="100%" height="Ti.UI.SIZE">
+				<ImageView image="/images/logo_tg_thai.png" width="40%" height="Ti.UI.SIZE"/>
+				<ActivityIndicator id="activityIndicator" />
+				<TextField id="username" width="40%" color="black" height="44dp" hintText="Username" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" borderColor="#FFF" backgroundColor="#FFF" borderRadius="5" top="5" paddingLeft="10" paddingRight="10"></TextField>
+				<TextField id="password" width="40%" color="black" height="44dp" passwordMask="true" hintText="Password" borderColor="#FFF" backgroundColor="#FFF" borderRadius="5" top="5"  paddingLeft="10" paddingRight="10"></TextField>
+				<!--<Button id="loginButton" onClick="onLogin" title="Login" borderColor="#FFF" borderRadius="15" backgroundColor="#CC000000" color="#FFF" width="40%" height="44" top="10" />-->
+				<Button id="loginButton" title="Login" borderColor="#FFF" borderRadius="15" backgroundColor="#CC000000" color="#FFF" width="40%" height="44dp" top="10" />
+				<Label id="errorMessage" width="40%" height="Ti.UI.SIZE" top="10" color="red" />
+			</View>
+			<Label id="version" class="fontSmallLight" right="5" bottom="5" color="white"></Label>
+		</View>
+		
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

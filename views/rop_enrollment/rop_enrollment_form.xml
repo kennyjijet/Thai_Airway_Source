@@ -1,0 +1,138 @@
+<Alloy>
+    <Window id="ropEnrollmentFormWindow" backgroundImage="/images/bg_general.png" layout = "vertical" title="ROP Application" height="100%" width = "100%">
+            <ScrollView layout="vertical" height="100%" width = "100%">
+                <View id="paxHeaderView"  height="16%" width="100%" backgroundImage="/images/bg_rop.png" layout="horizontal">
+                    <View height="100%"  width="20%"  >
+                        <View  top="10" bottom="10"  >
+                            <ImageView id="imageUser" image="/images/user_man.png" borderRadius='60' height="120" width="120" />
+                        </View>
+                    </View>
+                    <View height="100%"  width="80%" layout="vertical" >
+                        <View id="profileViewId" height="70%"  width="100%" layout="horizontal" >
+                            <View id="profileSubViewId" top="7%" bottom="10%"  width="100%" left="0" layout="vertical" >
+                                <Label class = "fontLargeBold" id = "name" left="0" color="#FFCB05">Last Name First Name</Label>                
+                                <Label class = "fontLargeBold" id = "seatNoClass" left="0" top="5%" color="#FFCB05">Seat No. 37A - Class Y</Label>                
+                                <Label class = "fontLargeBold" id = "floorZone" left="0" top="3%" color="#FFCB05">Main Deck - Zone 1</Label>                
+                            </View>                            
+                        </View>
+                        <View left="0" top="0" height="15%"  width="100%" layout="horizontal" >
+                            <Label left="0" class="subLabelShow" color="white" >Date Of Birth : </Label>
+                            <Label left="3" width="100"  id="dateOfBirth" color="#ffcb05" class="fontNormalBold" color="#FFCB05" >15/4/2000</Label>
+                            
+                            <Label left="0" class="subLabelShow" color="white" >Gender : </Label>
+                            <Label left="3" width="100" id="gender" color="#ffcb05" class="fontNormalBold" color="#FFCB05" >M</Label>                            
+                        </View>
+                        <View top="0" height="15%"  width="100%" layout="horizontal" >
+                            <Label   left="0" top="0" class="subLabelShow" color="white">Nationality : </Label>
+                            <Label left="3" top="0" id="nationality" color="#ffcb05" class="fontNormalBold" color="#FFCB05" >Thai</Label>
+                        </View>    
+                    </View>
+                </View>
+                <ScrollView id="scrollView" showVerticalScrollIndicator="true" layout="vertical" showHorizontalScrollIndicator="false" height="84%" width="100%">
+                    <View id="selectBodyView" layout="vertical" height="100%" width = "100%">
+                        <View id="saluationView" layout="vertical" height="7%" touchEnabled="false">
+                            <View layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Salutation :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="saluation" class = "fontBold18" hintText="Salutation" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <!-- <Label id="saluationLabel" class = "fontBold18" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#CCCCCC" top="15%" bottom="15%" left="3%" width="30%" backgroundColor="#26000000" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Saluation</Label> -->
+                                <!-- <ImageView image = "/images/arrow_down.png" left="-20" width="15" height="15"></ImageView> -->
+                            </View>
+                        </View>
+                        <View id="firstNameView" layout="vertical" height="7%" touchEnabled="false">
+                            <View id="firstNameSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >First Name :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="firstName" class = "fontBold18" hintText="First Name" maxLength="150" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                            </View>
+                        </View>
+                        <View id="lastNameView" layout="vertical" height="7%" touchEnabled="false">
+                            <View id="lastNameSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Last Name :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="lastName" class = "fontBold18" hintText="Last Name" maxLength="50" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                            </View>
+                        </View>
+                        <View id="birthDateView" layout="vertical" height="7%" touchEnabled="false">
+                            <View id="birthDateSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Date of Birth :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="dateOfBirth1" class = "fontBold18" hintText="Date of Birth" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                            </View>
+                        </View>
+                        <View id="genderView" layout="vertical" height="7%" touchEnabled="false">
+                            <View id="genderSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent" touchEnabled="false">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Gender :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="gender1" class = "fontBold18" hintText="Gender" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <!-- <ImageView image = "/images/arrow_down.png" left="-20" width="15" height="15"></ImageView> -->
+                            </View>
+                        </View>
+                        <View id="nationalityView" layout="vertical" height="7%" touchEnabled="false">
+                            <View id="nationalitySubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Nationality :</Label>
+                                <!-- <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label> -->
+                                <TextField id="nationality1" class = "fontBold18" hintText="Nationality" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <!-- <ImageView image = "/images/arrow_down.png" left="-20" width="15" height="15"></ImageView> -->
+                                <!-- <ImageView image = "/images/ic_arrow_right.png" left="-20" width="15" height="15"></ImageView> -->
+                            </View>
+                        </View>
+                        <View id="emailView" layout="vertical" height="7%">
+                            <View id="emailSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="140" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Email :</Label>
+                                <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label>
+                                <TextField id="email" class = "fontBold18" hintText="email@domain.com" maxLength="100" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                            </View>
+                        </View>
+                        <View id="phoneNumberHeaderView" layout="vertical" height="5%" backgroundImage="/images/bg_header_section.png">
+                            <View id="phoneNumberHeaderSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" height="100%" width="150" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Phone :</Label>
+                                <Label class = "fontLight18" color="white" left="1%" height="100%" width="70%" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >| Country Code | Area Code | Number |</Label>
+                            </View>
+                        </View>
+                        <View id="countryCodeView" layout="vertical" height="7%">
+                            <View id="countryCodeSubView" layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" color="white" left="3%" width="140" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >Phone Number :</Label>
+                                <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label>
+                                <TextField id="countryCode" class = "fontBold18" hintText="66" maxLength="5" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="15%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <TextField id="areaCode" class = "fontBold18" hintText="89" maxLength="10" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="15%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <TextField id="phoneNumber" class = "fontBold18" hintText="9997777" maxLength="100" hintTextColor="#A6A6A5" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="43%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                            </View>
+                        </View>
+                        <View id="attachmentView1" layout="vertical" height="10%" backgroundImage="/images/bg_header_section.png">
+                            <View layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" left="3%" height="100%" width="140" color="white">Boarding Pass : </Label> -->                        
+                                <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label>
+                                <ImageView id ="cameraBtn1" backgroundImage="/images/btn_camera4.png" left="3%" height="70" width="70" borderRadius="10" borderColor="white" borderWidth="1"></ImageView>
+                                <TextArea id="attachmentTextField1" class = "fontBold18" suppressReturn = "false" borderRadius="5" borderWidth="2" borderColor="#7B549C" color="#FFCB05" top="10%" bottom="10%" left="3%" right="2%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextArea>                        
+                            </View>
+                        </View>
+                        <View id="reportedByView" layout="vertical" height="7%" width="100%">
+                            <View layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+                                <Label class = "fontLight18" left="3%" height="100%" width="140" color="white">Applied By : </Label> -->                        
+                                <Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">*</Label>
+                                <TextField id="reportByTextField" class = "fontBold18" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></TextField>
+                                <!-- <Label id="reportByTextField" class = "fontBold18" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="1%" width="75%" backgroundColor="#26000000" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" ></Label> -->
+                            </View>                                                            
+                        </View>
+                        <View id="enrollConditionView" layout="vertical" height="22%" backgroundColor="#26000000">
+                            <View id="conditionHeaderLabelView" layout="horizontal" height="30%" width="100%" backgroundColor="transparent">
+                                <Label left="3%" width="92%" height="100%" class="fontBold18" color="white">Condition for Enrollment : </Label>
+                                <ImageView id="typeHasChildArrowDown" image = "/images/arrow_down.png" width="15" height="15"></ImageView>
+                            </View>
+                            <View id="enrollConditionLabelView" layout="horizontal" height="70%" width="100%" backgroundColor="transparent">
+                                <Label id="enrollConditionLabel" left="3%" right="3%" top="3%" bottom="10%"class="subLabelShow" color="white"></Label>
+                            </View>
+                        </View>
+                    </View>
+                </ScrollView>
+            </ScrollView>
+        <LeftNavButton >
+            <Button id = "cancelEnrollBtn" title="Cancel"/>
+        </LeftNavButton>    
+
+        <RightNavButton>
+            <Button id = "saveEnrollBtn" title="Save"/>
+        </RightNavButton>    
+    </Window>
+</Alloy> 

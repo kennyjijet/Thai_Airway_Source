@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="equipmentListWindow"  title="Select Equipment" height="100%"  width="100%" >
+		<View layout="vertical"  class="colorr" height="100%"  width="100%" >
+			<View layout="vertical" height="7%">
+				<Require src="custom_searchbar" type="widget" id="custom_searchbar"/>
+			</View>
+			<TableView backgroundColor="transparent" width="100%" height="93%" id="tableView" selectedColor='#fff' scrollable = "true"></TableView>
+		</View>
+	</Window>
+</Alloy>

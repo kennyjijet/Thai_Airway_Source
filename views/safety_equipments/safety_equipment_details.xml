@@ -1,0 +1,30 @@
+<Alloy>
+	<Window id="safetyDetailWindow" title="Safety Equipment Details" backgroundImage="/images/bg_general.png">
+		<View width="100%" height="100%" layout="vertical">
+			<TableView id="tableView" height="100%" width="100%" backgroundColor="transparent" separatorColor="transparent">
+				
+				<!-- <TableViewRow height="8%" backgroundColor="transparent" touchEnabled="false">
+					<Label id="titleName" class="fontNormalLight colorWhite" left="5%">Name :</Label>
+					<Label id="textName" class="fontLargeBold colorGold" left="20%"></Label>
+				</TableViewRow>
+				<TableViewRow id="descRow" backgroundColor="transparent" touchEnabled="false">
+					<Label id="titleDesc" class="fontNormalLight colorWhite" left="5%">Description :</Label>
+					<Label id="textDesc" class="fontLargeBold colorGold" left="20%"></Label>
+				</TableViewRow>
+				<TableViewRow height="8%" backgroundColor="transparent" touchEnabled="false">
+					<Label id="titleCrewChk" class="fontNormalLight colorWhite" left="5%">Crew check :</Label>
+					<Label id="textCrewChk" class="fontLargeBold colorGold" left="20%"></Label>
+				</TableViewRow>
+				<TableViewRow height="8%" backgroundColor="transparent" touchEnabled="false">
+					<Label id="titleQTY" class="fontNormalLight colorWhite" left="5%">Quantity :</Label>
+					<Label id="textQTY" class="fontLargeBold colorGold" left="20%"></Label>
+				</TableViewRow> -->
+			</TableView>
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

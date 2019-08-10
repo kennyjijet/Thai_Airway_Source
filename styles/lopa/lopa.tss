@@ -1,0 +1,159 @@
+".btn" : {
+	top : "10", 
+	height : "20",
+	font: { fontSize: Alloy.Globals.d_20pt }
+}
+
+".btnFont" : {
+	color : "#C7C7CC",
+	font: { fontSize: Alloy.Globals.d_20pt }
+}
+
+".scrollViewStyle" : {
+	backgroundColor : "#FFFFFF", 
+	textAlign : "center", 
+	contentHeight : 'auto', 
+	height  : "75%", 
+	width : Ti.UI.FILL, 
+	top : "10", 
+	backgroundImage : "/images/grey.png"
+}
+
+".textValue" : {
+	color : "#FFFFFF",
+}
+
+/*
+".btnShowDia" : {
+	width : "100%",
+	height : "100%"
+}
+*/
+".btnShowDia" : {
+	width : "78",
+	height : "78"
+}
+
+".btnFont" : {
+	color : "#C7C7CC",
+	font: { fontSize: Alloy.Globals.d_20pt }
+}
+
+".scrollViewStyle" : {
+	backgroundColor : "#FFFFFF", 
+	textAlign : "center", 
+	//contentHeight : 'Ti.UI.FILL', 
+	//contentHeight : 'auto', 
+	contentHeight : Ti.UI.SIZE, 
+	contentWidth : "100%",
+	height  : "85%", 
+	width : "100%", 
+	scrollType : 'vertical'
+}
+
+".textValue" : {
+	
+	color : "#FFFFFF",
+	font: { 
+		fontWeight : 'bold',
+		fontSize : Alloy.Globals.d_20pt
+
+	}	
+}
+
+
+".fontBold14" : {
+	font : {
+		fontSize : Alloy.Globals.d_14pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold15" : {
+	font : {
+		fontSize : Alloy.Globals.d_15pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold18" : {
+	font : {
+		fontSize : Alloy.Globals.d_18pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold20" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt,
+		fontWeight : "bold"
+	}
+}
+
+
+".fontBold22" : {
+	font : {
+		fontSize : Alloy.Globals.d_22pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold24" : {
+	font : {
+		fontSize : Alloy.Globals.d_24pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold28" : {
+	font : {
+		fontSize : Alloy.Globals.d_28pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight14" : {
+	font : {
+		fontSize : Alloy.Globals.d_14pt
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+	}
+}
+
+".fontLight18" : {
+	font : {
+		fontSize : Alloy.Globals.d_18pt,
+	},
+	color:"#000"
+}
+
+".fontLight20" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt,
+	}
+}
+
+".fontLight22" : {
+	font : {
+		fontSize : Alloy.Globals.d_22pt,
+	},
+	color:"#000"
+}
+
+".fontLight28" : {
+	font : {
+		fontSize : Alloy.Globals.d_28pt,
+	}
+}
+

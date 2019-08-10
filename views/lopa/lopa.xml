@@ -1,0 +1,104 @@
+<Alloy>
+	<Window id="lopaWindow" title="LOPA">
+		<!--<Require src="lopa_widget" type="widget" id="lopa_widget"/>-->
+		<!--<ActivityIndicator id="activityIndicator" class="activityIndicator" layout="vertical"/>-->
+		<View id='view1' layout="vertical" height="100%">
+		<!--<View id="titlteView" width="Ti.UI.SIZE" height="Ti.UI.SIZE"></View>-->
+		<View id="selectionHeaderView" top="5" width="Ti.UI.FILL" height="10%">
+			
+			<View id="leftHeaderView" left="5" top="5" width="40%" height="Ti.UI.SIZE">
+				<View layout="horizontal" width="100%" height="Ti.UI.SIZE">
+					<ImageView id="imageFlightLopa" top="0" left="20" image="/images/flight_lopa.png" width="45"/>
+					<View id="leftTextLine" layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+						<Label id="aircraft_type" left="10" text="" class="fontBold20" color="#FFFFFF" />
+						<Label id="aircraftRegistration" left="10" text="" class="fontBold20" color="#FFFFFF" />
+						<Label id="titleName" left="10" class="fontBold16" color="#FFFFFF" ></Label>
+						<!--<Label id="titleName" left="10" class="fontBold24" color="#FFFFFF" minimumFontSize="7" width='auto' height='auto'></Label>-->
+						<!--  <View class="class1 class2" /> -->
+						<!--<Label id="lopaInformationLabel" left="10" text="" class="fontBold18" color="#FFFFFF" />-->
+					</View>
+				</View>
+			</View>
+			
+			<View top="5" bottom="10" width="10%" >
+				<View layout="vertical" width="100%" height="100%">
+					<Button id="btnSelectZone" backgroundImage="/images/select_zone.png" class="btnShowDia"/>
+				</View>
+			</View>
+			
+			<View id="rightHeaderView" right="5" top="5" width="40%" height="Ti.UI.SIZE">
+				<View layout="horizontal" top="0" width="100%" height="Ti.UI.SIZE">
+					<ImageView id="imageFloorLopa" top="0" left="30" image="/images/floor_lopa.png" width="45"/>
+					<View id="rightTextLine" layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+						<Label id="titleLabel" left="10" text="" class="fontBold20" color="#FFFFFF"></Label>
+						<View layout="horizontal" left="10" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+							<Label id="total" text="" class="fontBold20" color="#FFFFFF"/>
+							<Label id="currentPax" left="2" text="" class="fontBold20" color="#FFCB05"/>
+							<Label id="totalPA" left="2" text="" class="fontBold20" color="#FFFFFF"/>
+						</View>
+						<View layout="horizontal" left="10" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+							<Label id="totalIncidentText" left="2" text="" class="fontBold16" color="#FFFFFF"/>
+							<Label id="totalIncidentValue" left="2" text="" class="fontBold16" color="#FFFFFF"/>
+						</View>
+						
+						<!--<Label id="totalPA" left="10" text="" class="fontBold20" color="#FFFFFF"/>-->
+					</View>
+				</View>
+			</View>
+			
+		</View>
+		<View top="20" width="100%" height="50" backgroundColor="#FFFFFF">
+			<Button id="showHelp" backgroundImage ="/images/help.png" width="40" height="40" left="10" />
+			<View id="headerView" width="80%" height="35"></View>
+			<Button id="showLopaList" backgroundImage="/images/btn_lopa_list.png" width="40" height="40" right="10"/>
+		</View>
+		
+		<!--
+		<View width="100%" height="35" backgroundColor="#FFFFFF">
+			<View id="headerView" top="5" width="80%"></View>
+		</View>
+		-->
+		
+		<ScrollView id="mainView" class="scrollViewStyle" backgroundColor="#FFFFFF" borderWidth="2" borderColor='#EDEDED'>
+			<!--<ActivityIndicator id="activityIndicator" class="activityIndicator" layout="vertical"/>-->
+			<View id="viewChild" layout="vertical" top="10">
+				<View id="frontLag" top="10" width="85%" height="Ti.UI.SIZE" backgroundImage=""></View>
+				<View layout="horizontal" top="10" width="100%" height="Ti.UI.SIZE">
+					<View id="leftView" left="0" top="0" width="10%" height="Ti.UI.SIZE" backgroundImage=""></View>
+					<!--<View id="seatView" top="0" width="80%" height="Ti.UI.SIZE"  backgroundImage=""></View>-->
+					<View id="seatView" top="0" width="80%" height="Ti.UI.SIZE"  backgroundImage=""></View>
+					<View id="rightView" right="0" top="0" width="10%" height="Ti.UI.SIZE" backgroundImage=""></View>
+				</View>
+				<View id="backLag" top="10" width="85%" height="Ti.UI.SIZE" backgroundImage=""></View>
+				<!-- Bottom space -->
+				<View id="gapper" width="100%" height="70%"></View>
+			</View>
+		</ScrollView>
+		
+		<!-- <View id="selectionView" layout="horizontal" top="10" width="Ti.UI.FILL" height="Ti.UI.SIZE"> -->
+	</View>
+	<!--<View id="selectionView" layout="horizontal" width="Ti.UI.FILL" height="8%" bottom="0" backgroundColor="#EDEDED">-->
+	<View id="selectionView" layout="horizontal" width="Ti.UI.FILL" height="8%" bottom="0" backgroundColor="#EDEDED">	
+		<View width="100%" height="100%" layout="horizontal">
+			<Require src="multiple_selection_widget" type="widget" id="multiple_selection_widget"/>
+		</View>
+		
+		<!--
+		<View width="100%" height="100%" layout="horizontal">
+			<Require src="another_widget" type="widget" id="another_widget"/>
+		</View>
+		-->
+		
+	</View>
+	
+	<RightNavButton>
+       	<Button id="createIncidentBtn" title="Create Incident" />
+    </RightNavButton>
+		
+	<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101" platform="android">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

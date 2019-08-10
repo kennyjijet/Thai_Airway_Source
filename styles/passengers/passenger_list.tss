@@ -1,0 +1,48 @@
+
+	
+	
+
+
+
+
+".LabelBtnNotUse": {
+	textAlign: "Ti.UI.TEXT_ALIGNMENT_CENTER",
+	color: "#5DADE2",
+	touchEnabled: false,
+	color: "#D7DBDD",
+	font:{
+        fontSize: '18sp',
+        fontFamily: 'arial',
+        fontWeight: 'bold'
+    }
+}
+".tableViewRow": {
+	height: "100%",
+	width: "100%",
+	selectedBackgroundColor:"#33ffffff"
+	
+}
+"TableView": {
+	scrollable: false,
+	separatorColor: "#ffffff"
+}
+
+".colorr" : {
+	backgroundGradient: {
+    type: 'linear',
+    colors: ['#cc6f01a7', '#6f01a7'],
+    startPoint: { x: 0, y: 0 },
+    endPoint: { x: '100%', y: '100%' },
+    backFillStart:false
+  }
+}
+
+".bottomBtnฺฺTableStyle": {
+    backgroundColor:"#FFFFFF",
+    width:"49.5%", 
+	height:"100%",
+	scrollable:"false",
+	separatorColor: "transparent"
+//	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+//	textAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+}

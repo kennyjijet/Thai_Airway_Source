@@ -1,0 +1,130 @@
+<Alloy>
+	<Window id="passenger_multi_win" class="container" title="Passenger List" height="100%"  width="100%" >
+		<View layout="vertical"  class="colorr" height="100%"  width="100%" >
+			<View height="8%" width="100%" layout="horizontal" >
+				<!-- <TableView idType="All"    height="100%" width="25%">
+					<TableViewRow   class="tableViewRow" >
+						<Label class="LabelBtn"   >
+							ALL
+						</Label>
+					</TableViewRow>
+				</TableView> -->
+				
+				<TableView id="All" idType="All" onClick="changeGroup"  height="100%" width="25%" backgroundColor="transparent" separatorColor= "transparent" >
+					<TableViewRow idType="All"  class="tableViewRow" height="100%" selectedBackgroundColor="33ffffff">
+						<View  idType="All" height="100%">
+							<Label idType="All" class="LabelBtn"   color="white">
+							ALL
+						</Label>
+						</View>
+						
+					</TableViewRow>
+				</TableView>
+				
+				<TableView id="bySeat" idType="bySeat" onClick="changeGroup"  height="100%" width="25%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow idType="bySeat" class="tableViewRow" >
+						<View idType="bySeat" height="100%">
+							<ImageView idType="bySeat" height="60px" width="60px" image="images/BTN_SEAT.png"></ImageView>
+						</View>
+						
+					</TableViewRow>
+				</TableView>
+				
+				<TableView id="byName" idType="byName" onClick="changeGroup"  height="100%" width="25%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow idType="byName" class="tableViewRow" >
+						<View idType="byName"  height="100%">
+							<ImageView idType="byName" height="60px" width="60px" image="images/BTN_NAME.png"></ImageView>
+						</View>
+						
+					</TableViewRow>
+				</TableView>
+				
+				<!-- <TableView idType="byName" height="100%" width="25%">
+					<TableViewRow  class="tableViewRow">
+						<Label  class="LabelBtn" >
+							NAME
+						</Label>
+					</TableViewRow>
+				</TableView> -->
+				
+				<TableView id="byRop" idType="byRop" onClick="changeGroup"  height="100%" width="25%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow  idType="byRop" class="tableViewRow" >
+						<View  idType="byRop" height="100%">
+							<ImageView idType="byRop"  height="60px" width="60px" image="images/BTN_ROP.png"></ImageView>
+						</View>
+						
+					</TableViewRow>
+				</TableView>
+				
+				<!-- <TableView idType="byRop"  height="100%" width="25%">
+					<TableViewRow  class="tableViewRow">
+						<Label  class="LabelBtn" >
+							ROP
+						</Label>
+					</TableViewRow>
+				</TableView> -->
+			</View>
+			<SearchBar barColor='#6f01a7' color="white" id="search" showCancel="true" height="5%" width="100%" hintText="Search" />
+			
+				<TableView backgroundColor="transparent" width="100%" height="81%" id="tableView" separatorColor="transparent" scrollable = "true">
+				</TableView>
+				
+				<View layout="vertical" height="6%" width = "100%">
+                <View layout="horizontal" height="100%" width = "100%" backgroundColor="80000000">
+                    <View layout="vertical" height="100%" width="50%">
+                        <TableView id="submitBtnTable" class="bottomBtnฺฺTableStyle" borderRadius="10" top="15%" height ="70%" width="45%" right="20%" layout="vertical"></TableView>
+                    </View>
+                    <View layout="vertical" height="100%" width="50%">
+                        <TableView id="cancelBtnTable" class="bottomBtnฺฺTableStyle" borderRadius="10" top="15%" height ="70%" width="45%" left="20%" layout="vertical"></TableView>
+                    </View>
+                </View>
+            </View>
+            
+            
+			
+		</View>
+	</Window>
+</Alloy>
+
+<!-- <Alloy>
+	<Window class="container" title="Passenger List" height="100%"  width="100%" >
+		<View layout="vertical" backgroundColor="#999" height="100%"  width="100%" >
+			<View backgroundColor="#B6B6B4" height="10%" width="100%" layout="horizontal" >
+				<TableView idType="All"  onClick="changeGroup"  height="100%" width="25%">
+					<TableViewRow   class="tableViewRow" >
+						<Label class="LabelBtn"   >
+							ALL
+						</Label>
+					</TableViewRow>
+				</TableView>
+				<TableView idType="bySeat" onClick="changeGroup" height="100%" width="25%" backgroundColor="#555">
+					<TableViewRow  class="tableViewRow" height="100%">
+						<View  height="100%">
+							<ImageView  height="70px" width="70px" image="images/BTN_SEAT.png"></ImageView>
+						</View>
+						
+					</TableViewRow>
+				</TableView>
+				<TableView idType="byName"  onClick="changeGroup" height="100%" width="25%">
+					<TableViewRow  class="tableViewRow">
+						<Label  class="LabelBtn" >
+							NAME
+						</Label>
+					</TableViewRow>
+				</TableView>
+				<TableView idType="byRop"  onClick="changeGroup" height="100%" width="25%">
+					<TableViewRow  class="tableViewRow">
+						<Label  class="LabelBtn" >
+							ROP
+						</Label>
+					</TableViewRow>
+				</TableView>
+			</View>
+			<SearchBar id="search" showCancel="true" height="5%" width="100%" hintText="Search" />
+			
+				<TableView width="100%" height="85%" id="tableView" separatorColor="transparent" scrollable = "true">
+				</TableView>
+			
+		</View>
+	</Window>
+</Alloy> -->

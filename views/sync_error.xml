@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="syncErrorWindow" title="SyncError" class="container">
+		<TitleControl>
+			<Label class="windowTitleBold">Sync Error</Label>
+		</TitleControl>	
+		
+		<View id="AppWrapper" layout='vertical'>
+			<TableView id="errorTableView" backgroundColor="transparent">
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

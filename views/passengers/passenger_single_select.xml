@@ -1,0 +1,37 @@
+<Alloy>
+	<Window  id="passengerSingleId" title="Passenger List" height="100%"  width="100%" center="50%" >
+		<View layout="vertical"  class="colorr" height="100%"  width="100%" >
+			<View id="menuFilterBtn" height="8%" width="100%" layout="horizontal" >
+							
+                <View id="bySeat" layout="vertical" height="100%" width="33%" backgroundColor="transparent">
+					<ImageView id="bySeatImage" top="10" height="60" width="50" image="/images/btn_seat.png" backgroundColor="transparent"></ImageView>
+                </View>                                        
+
+                <View id="byName" layout="vertical" height="100%" width="33%" backgroundColor="transparent">
+					<ImageView id="byNameImage" backgroundColor="transparent" top="10" height="60" width="50" image="/images/btn_name.png"></ImageView>
+                </View>                                        
+
+                <View id="byRop" layout="vertical" height="100%" width="33%" backgroundColor="transparent">
+					<ImageView id="byRopImage" backgroundColor="transparent" top="10" height="60" width="50" image="/images/btn_rop.png"></ImageView>
+                </View>                                        
+
+			</View>
+			<View id="serchView" height="7%" width="100%" backgroundColor="#40000000">
+                <View layout="horizontal" height="100%" width="100%">
+                    <View id="searchSecThirdView" height="100%" width="100%" backgroundColor="#40000000">
+                        <View id="searchImgView"  height="100%" width="7%" left="0" layout="vertical">
+                            <ImageView id="searchImg" image="/images/ic_search1.png" top="5" bottom="5" right="5" left="5"></ImageView>                                
+                        </View>
+                        <TextField id="customSearchBar" hintTextColor="#CCCCCC" hintText=" (Name),(Dest),Class (Y),(ROP),Infant,Staff,(Main,Upper),(Zone 1)" color="white" backgroundColor="#26000000" borderColor="#7B549C" borderWidth="2" borderRadius = "7" left = "7%" top="5" bottom="5" width="92%" ></TextField>
+                        <ImageView id="clearTextBtn" image="/images/ic_clear1.png" right="20" height="25" width="25"></ImageView>                                
+                    </View>                        
+                </View>
+			</View>
+			
+			<View id="bodyView" layout="vertical" width="100%" height="85%" backgroundColor = "transparent">
+				<TableView id="tableView" backgroundColor="transparent" width="100%" height="100%" scrollable = "true"></TableView>			
+            </View>
+
+		</View>
+	</Window>
+</Alloy>

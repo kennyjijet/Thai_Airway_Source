@@ -1,0 +1,26 @@
+
+".container" : {
+  
+}
+
+".fontLight18[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+	},
+	color : "#FFF"
+}
+
+".fontLight22[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_22pt,
+	},
+	color : "#000"
+}
+
+".fontBold24[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_24pt,
+		fontWeight : "bold"
+	},
+	color : "#000"
+}

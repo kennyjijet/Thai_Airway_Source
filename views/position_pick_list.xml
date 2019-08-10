@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="pickerWindow" class="container" height="100%" width="100%"  exitOnClose="true">
+		<View id="list1View" class="viewScreen" backgroundColor="transparent" layout="vertical" height="100%" width="100%"  >
+            <View layout="vertical" height="7%">
+                <Require src="custom_searchbar" type="widget" id="custom_searchbar"/>
+            </View>
+            
+            <View layuout="vertical" width="100%" height="93%" backgroundColor="transparent">            
+			<TableView id="tableView" scrollable="true" height="100%" backgroundColor="transparent" separatorColor= "#5E3987"></TableView>
+            </View>			            
+		</View>
+        <LeftNavButton >
+            <Button id = "cancelBtn" title="Cancel"/>
+        </LeftNavButton>    
+
+        <RightNavButton>
+            <Button id = "doneBtn" title="Done"/>
+        </RightNavButton>    
+	</Window>
+</Alloy>

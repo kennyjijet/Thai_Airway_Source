@@ -1,0 +1,15 @@
+
+".container" : {
+  
+}
+
+".fontBold18" : {
+	font : {
+		fontSize : Alloy.Globals.d_18pt,
+		fontWeight : "bold"
+	}
+}
+
+".colorWhite" : {
+	color : "white"
+}

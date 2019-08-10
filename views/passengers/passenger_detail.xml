@@ -1,0 +1,166 @@
+<Alloy>
+	<Window class="container" id="passengerDetailWindow" title="Passenger Detail" height="100%"  width="100%" backgroundImage="/images/bg_general.png">
+		<View id="passengerDetailView" layout="vertical"  height="100%"  width="100%">
+			<View height="19%" width="100%" layout="horizontal" id="imgTitleBar">
+				<View id="userImageView" height="100%"  width="20%"  >
+					<View  top="10" bottom="10"  >
+						<ImageView id="image" image="" borderRadius='60' height="120" width="120" />
+					</View>
+				</View>
+				<View id="paxDetailView" height="100%"  width="80%" layout="vertical" >
+					<View height="76%"  width="100%" layout="horizontal" >
+						<View id="paxNameView" top="7%" bottom="10%"  width="65%" left="0" layout="vertical" >
+							<Label left="0" color="#FFCB05" class="LabelShow2"  id="firstName"></Label>
+							<Label left="0" top="5%"  class="subLabelShow" id="bookingSeatClass"></Label>
+							<Label left="0"  class="subLabelShow"  id="floorZone"></Label>
+						</View>
+						
+						<View id="ROPViewId" top="15%" bottom="10%"  width="35%" left="0" layout="vertical"  >
+							<View height="100%" top="5%" width="80%"   id="showRopDetail" zIndex="100" layout="vertical">
+								<Label  height="15%"   id="ropType" class="labelMember" ></Label>
+								<View id="ropProfileImage" top="5%"  height="90%"   >
+									<ImageView id="imageROP" zIndex="100" borderRadius='5' height="80 " width="120" />								
+								</View>
+							</View>
+							<View id="applyROP">
+								<Label id="ROPlabel"  class="labelApplyForRop">Apply for ROP</Label>
+							</View>
+						</View>
+					</View>
+					
+					<View id="dateGen123Id" left="0" top="-8" height="10%"  width="100%" layout="horizontal">
+						<Label left="0"  id="dateGenderNation"  class="subLabelShow"  ></Label>
+						<Label left="0" width="100"  id="dateGenderNation1" color="#ffcb05" class="subLabelShow"  ></Label>
+						<Label left="0"  id="dateGenderNation2"  class="subLabelShow"  ></Label>
+						<Label left="0" width="100" id="dateGenderNation3" color="#ffcb05" class="subLabelShow"  ></Label>
+						
+					</View>
+					<View id="dateGen45Id" top="0" height="14%"  width="100%" layout="horizontal" >
+						<Label left="-12" top="5" id="dateGenderNation4"  class="subLabelShow"  ></Label>
+						<Label top="5" id="dateGenderNation5" color="#ffcb05" class="subLabelShow"  ></Label>
+					</View>
+
+				</View>
+
+			</View>
+			<View  width="100%" height="81%" layout="vertical" >
+				<ScrollView id="scrollView" layout="vertical" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="100%" width="100%">
+
+					<View backgroundImage="/images/bg_header_section.png" id="ropInfoLabel"  height="60" width="100%" >
+						<Label left="5%" class="subLabelShow" id="ropProfile">ROP Profile</Label>
+					</View>
+					<View  id="loopRop" height="0" width="100%" layout="horizontal"></View>
+					<View  backgroundImage="/images/bg_header_section.png"  height="60" width="100%" >
+						<Label left="5%" class="subLabelShow">Flight Passenger Info</Label>
+					</View>
+					<View  top="2" height="60" width="100%" layout="horizontal">
+						<View  height="60" width="25%" >
+							<Label left="20%"  class="LabelShow" >Booking Class :</Label>
+						</View>
+						<View  height="60" width="25%" >
+							<Label left="13%"  class="LabelShow2" id="bookingClass"></Label>
+						</View>
+								
+					</View>
+					<View  top="2" height="60" width="100%" layout="horizontal">
+						<View  height="60" width="30%" >
+							<Label left="17%" color="white" class="subLabelShow">Connecting Flight :</Label>
+						</View>
+						<View  height="60" width="20%" >
+							<Label left="4%" color="#ffcb05" class="labelShow" id="connectingFlight"></Label>
+						</View>
+						<View  height="60" width="25%" >
+							<Label left="20%"  color="white" class="subLabelShow">Date time :</Label>
+						</View>
+						<View  height="60" width="25%" >
+							<Label left="4%" color="#ffcb05" class="labelShow" id="connectingDateTime"></Label>
+						</View>
+					</View>
+					<View  backgroundImage="/images/bg_header_section.png" id="HerdInfant" top="2" height="60" width="100%" >
+						<Label left="5%" class="subLabelShow">Infant Info</Label>
+					</View>
+					<View id="BodyInfant" top="2" height="60" width="100%" layout="horizontal">
+						<View  top="2" height="60" width="15%" >
+							<Label left="30%"  class="subLabelShow">Name :</Label>
+						</View>
+						<View  top="2" height="60" width="35%" >
+							<Label  left="0" color="#ffcb05" id="infantName" class="labelShow" id="infantName"></Label>
+						</View>
+						<View  top="2" height="60" width="15%" >
+							<Label left="20%" class="subLabelShow">Age :</Label>
+						</View>
+						<View  top="2" height="60" width="34.99%" >
+							<Label left="0" color="#ffcb05" id="infantAge" class="labelShow" id="infantAge"></Label>
+						</View>
+
+					</View>
+					<View backgroundImage="/images/bg_header_section.png" id="headSSRname" top="2" height="60" width="100%" bottom="-2" >
+						<Label left="5%" class="subLabelShow">Special Request (SSR) Info</Label>
+					</View>
+					<View id="headSSR" backgroundColor="#0Dffffff" height="30" width="100%" layout="horizontal">
+						<View  height="100%" width="20%" >
+							<Label id="c1" class="subLabelShow">TYPE</Label>
+						</View>
+						<View  height="100%" width="25%" >
+							<Label id="c1" class="subLabelShow">STATUS</Label>
+						</View>
+						<View  height="100%"  >
+							<Label id="c1" class="subLabelShow">REMARK</Label>
+						</View>						
+					</View>
+					<View  id="loopSSR" height="Ti.UI.SIZE" width="100%" layout="vertical"></View>
+					<!-- <TableView id="passengerPsyBtb" height="60" scrollable="false" separatorColor="transparent" backgroundImage="/images/bg_header_section.png" top="2">
+						<TableViewRow height="60"  title="Passenger Psychology" color="white" hasChild="true" backgroundColor="transparent"></TableViewRow>
+					</TableView> -->
+					<!-- <View  backgroundImage="/images/bg_header_section.png" id="passengerPsyBtb" top="2" height="60" width="100%" >
+						<Label left="5%" class="subLabelShow"> Passenger Psychology </Label>
+					</View> -->
+					
+					<TableView height="60" id="passengerPsyBtb" scrollable="false" separatorColor="transparent" top="2" backgroundImage="/images/bg_header_section.png">
+						<TableViewRow height="60" hasChild="true" backgroundColor="transparent">
+			               		     <Label left="5%" color="white"  class="subLabelShow">Passenger Psychology</Label>
+						</TableViewRow>
+					</TableView>
+					
+					
+					<TableView id="passengePsycontent" scrollable="false" height="Ti.UI.SIZE" backgroundColor="transparent" separatorColor="transparent">
+						
+					</TableView>
+					
+					
+					<TableView id="incidentBtn" height="60" scrollable="false" separatorColor="transparent" backgroundImage="/images/bg_header_section.png" top="2">
+						<TableViewRow height="60" hasChild="false" backgroundColor="transparent">
+	               		    <Label left="5%" class="subLabelShow">Create Incident</Label>
+                            <ImageView image = "//images/arrow_down.png" right="15" width="15" height="15"></ImageView>
+						</TableViewRow>
+					</TableView>
+					<TableView id="incidentListTableView1" height="Ti.UI.SIZE"  backgroundColor = "transparent" scrollable="false" separatorColor="#5E3987"></TableView>
+					
+					
+					<TableView id="upgradeSeatBtn" height="60" scrollable="false"  backgroundImage="/images/bg_header_section.png" backgroundColor="transparent" separatorColor="#5E3987" top="2">
+						<TableViewRow height="60"  hasChild="true" backgroundColor="transparent">
+							<Label height="100%" left="5%" right="0" color="white" class="subLabelShow">Upgrade Seat</Label>
+						</TableViewRow>
+					</TableView>
+					
+                    <TableView id="upgradeSeatTableView" height="Ti.UI.SIZE"  backgroundColor = "transparent" scrollable="false" separatorColor="#5E3987"></TableView>
+
+					<TableView id="changeSeatBtn" height="60" scrollable="false" separatorColor="transparent" backgroundImage="/images/bg_header_section.png" top="2">
+						<TableViewRow height="60"  hasChild="true" backgroundColor="transparent">
+                            <Label height="100%" left="5%" right="0" color="white" class="subLabelShow">Change Seat</Label>
+						</TableViewRow>
+					</TableView>
+
+                    <TableView id="changeSeatTableView" height="Ti.UI.SIZE"  backgroundColor = "transparent" scrollable="false" separatorColor="#5E3987"></TableView>
+
+				</ScrollView>
+			</View>
+
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" platform="android">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

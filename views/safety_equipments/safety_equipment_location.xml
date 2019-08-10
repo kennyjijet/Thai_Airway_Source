@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="safetyLocalWindow" title="Safety Equipment" backgroundImage="/images/bg_general.png">
+		<View width="100%" height="100%" layout="vertical">
+			<TableView id="tableView" height="100%" backgroundColor="transparent" separatorColor="transparent">
+				
+			</TableView>
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

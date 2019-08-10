@@ -1,0 +1,135 @@
+
+".container" : {
+  
+}
+
+".fontSmallBold" : {
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+
+".fontLargeBold" : {
+	font : {
+		fontSize : 22,
+		fontWeight : "bold"
+	}
+}
+
+".fontExtraLargeBold" : {
+	font : {
+		fontSize : 28,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold14" : {
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold15" : {
+	font : {
+		fontSize : 15,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold16" : {
+	font : {
+		fontSize : 16,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold18" : {
+	font : {
+		fontSize : 18,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold20" : {
+	font : {
+		fontSize : 20,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold24" : {
+	font : {
+		fontSize : 24,
+		fontWeight : "bold"
+	},
+	
+}
+
+".fontBold24[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_24pt,
+		fontWeight : "bold"
+	},
+	color : "#000"
+}
+
+".fontBold28" : {
+	font : {
+		fontSize : "28",
+		fontWeight : "bold"
+	}
+}
+
+".fontLight14" : {
+	font : {
+		fontSize : 14
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : 16,
+	}
+}
+
+".fontLight18[platform=ios]" : {
+	font : {
+		fontSize : 18,
+	},
+}
+
+".fontLight18[platform=android]" : {
+	font : {
+		fontSize : 14,
+	},
+	color : "#FFF"
+}
+
+".fontLight20" : {
+	font : {
+
+		fontSize : 20,
+	}
+}
+
+".fontLight22" : {
+	font : {
+		fontSize : 22,
+	},
+	
+}
+
+".fontLight22[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_22pt,
+	},
+	color : "#000"
+}
+
+".fontLight28" : {
+	font : {
+		fontSize : "28",
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"global": {
+		"consumerKey" : "3MVG9e2mBbZnmM6k1VbYHPo8p9.iwIS.3ctS35jRO4lg3fVvjGwB_rymmDpEIkQ8gEKkW6Jl0GRLvFTqw23w3",
+		"consumerSecret" : "7387599815800034304",
+		"instanceURL" : "",
+		"accessToken" : "",
+		"refreshToken" : "",
+		"dbname" : "TGdb",
+		"syncInterval" : "300"
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {
+		"multiple_selection_widget": "1.0",
+		"list_widget" : "1.0",
+		"custom_searchbar" : "1.0"
+		
+	},
+	"autoStyle": true
+}

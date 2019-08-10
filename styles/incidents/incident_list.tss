@@ -1,0 +1,188 @@
+".btnFontStyle": {
+	font: {
+		fontSize: 2,
+		fontWeight:'bold'
+	},
+	color:"white"	
+}
+
+".genFontStyle[platform=ios]": {
+	height : "100%",
+	font: {
+		fontSize: "2",
+//		fontWeight:'bold'
+	},
+	color:"white"	
+}
+
+".genFontStyle[platform=android]": {
+	height : "100%",
+	font: {
+		fontSize: 13,
+//		fontWeight:'bold'
+	},
+	color:"white"	
+}
+
+".valueFontStyle[platform=ios]": {
+	height : "100%",
+	left : "3%",
+	font: {
+		fontSize: "2",
+		fontWeight:'bold'
+	},
+	color:"white"	
+}
+
+".valueFontStyle[platform=android]": {
+	height : "100%",
+	left : "3%",
+	font: {
+		fontSize: 13,
+		fontWeight:'bold'
+	},
+	color:"white"	
+}
+
+
+".btnTableStyle": {
+    backgroundColor:"transparent",
+    width:"14.2%", 
+	height:"100%",
+	scrollable:"false",
+	separatorColor: "transparent"
+//	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+//	textAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+}
+
+".bottomBtnFontStyle": {
+	font: {
+		left:3,
+		fontSize: 3,
+		fontWeight:'bold'
+	},
+	color:"brown"	
+}
+
+".bottomBtnฺฺTableStyle": {
+    backgroundColor:"#FFFFFF",
+    width:"49.5%", 
+	height:"100%",
+	scrollable:"false",
+	separatorColor: "transparent"
+//	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+//	textAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+}
+
+".btnStyle": {
+//	borderColor: "black",
+	hasChild : "false",
+	width:"100%", 
+	height:"100%"	
+}
+
+".btnViewLabel" : {
+	font:{
+		fontSize:Alloy.Globals.d_20pt, 
+		fontWeight:'bold'
+	},
+//	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	textAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	color:"#666666",
+	left:85	
+}
+
+".imgIconStyle" : {
+//	left : 30,
+	width : 40,
+	height : 40,
+	top : 5
+}
+
+".viewDefectLabel" :
+{
+	font:{
+		fontSize:Alloy.Globals.d_18pt, 
+		fontWeight:'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#666666",
+	left:20,
+	top:10	
+}
+".viewDateTimeLabel" :
+{
+	font:{
+		fontSize:Alloy.Globals.d_15pt, 
+		fontWeight:'regular'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#666666",
+	left:20,
+	top:3	
+}
+".viewCategoryLabel" :
+{
+	font:{
+		fontSize:Alloy.Globals.d_15pt, 
+		fontWeight:'regular'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#666666",
+	left:20,
+	top:2	
+}
+".viewStatusLabel" :
+{
+	font:{
+		fontSize:Alloy.Globals.d_15pt, 
+		fontWeight:'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#666666",
+	left:20,
+	top:2
+}
+".viewSeatLabel" :
+{
+	font:{
+		fontSize: Alloy.Globals.d_20pt, 
+		fontWeight:'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	color:"#666666",
+	right:5,
+	top:40
+}
+
+
+".fontBold17" : {
+	font : {
+		fontSize : Alloy.Globals.d_17pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt
+	}
+}
+
+".fontBold14[platform=ios]" : 
+{
+	font : {
+		fontSize : Alloy.Globals.d_14pt,
+		fontWeight : "bold"
+	}
+	
+}
+
+".fontBold14[platform=android]" : 
+{
+	font : {
+		fontSize : 15,
+		fontWeight : "bold"
+	}
+	
+}

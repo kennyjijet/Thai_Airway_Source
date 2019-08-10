@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="compDetail" backgroundImage="/images/bg_general.png" layout="vertical">
+		<View id="mainView" width="100%" height="Ti.UI.SIZE" layout="vertical">
+			
+		</View>
+		<View id="btnView" width="100%" height="10%" layout="horizontal">
+			<View width="50%">
+				<ImageView id="btnSave" image="/images/btn_save.png" height="50"></ImageView>
+			</View>
+			<View width="50%">
+				<ImageView id="btnCancel" image="/images/btn_cancel.png" height="50"></ImageView>
+			</View>
+		</View>
+		<RightNavButton>
+            <Button id="condition" title="Condition" />
+        </RightNavButton>
+	</Window>
+</Alloy>

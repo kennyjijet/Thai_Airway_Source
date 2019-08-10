@@ -1,0 +1,33 @@
+<Alloy>
+	<Window id="edocumentWindow" title="E-Document List" layout="vertical" backgroundColor="white">
+		<ScrollView id="edocumentScoll" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="false" width="100%" height="100%" layout="vertical">
+			<View id="relateSection" width="100%" height="7%">
+				<Label id="relatedToFlight" class="fontlight22" text="Related To Flight" color="white" left="20" />
+			</View>
+			<TableView id="relateTable" backgroundColor="transparent" height="Ti.UI.SIZE" >
+				
+	        </TableView>
+	        <View id="allSection" width="100%" height="7%">
+				<Label id="allDocument" class="fontlight22" text="All Document" color="white" left="20" />
+			</View>
+			<TableView id="allTable" backgroundColor="transparent" height="Ti.UI.SIZE">
+				<TableViewRow id="funcInfo" width="100%" height="50">
+            		<ImageView image="/images/ic_document.png" height="30" left="5%"></ImageView>
+            		<Label width="70%" left="10%" color="white">Function Info</Label>
+	            </TableViewRow>
+	            <TableViewRow id="manual" width="100%" height="50">
+            		<ImageView image="/images/ic_document.png" height="30" left="5%"></ImageView>
+            		<Label width="70%" left="10%" color="white">Manual</Label>
+	            </TableViewRow>
+	            <TableViewRow id="safety" width="100%" height="50">
+            		<ImageView image="/images/ic_document.png" height="30" left="5%"></ImageView>
+            		<Label width="70%" left="10%" color="white">Safety</Label>
+	            </TableViewRow>
+	            <TableViewRow id="service" width="100%" height="50">
+            		<ImageView image="/images/ic_document.png" height="30" left="5%"></ImageView>
+            		<Label width="70%" left="10%" color="white">Service</Label>
+	            </TableViewRow>
+	        </TableView>
+		</ScrollView>
+	</Window>
+</Alloy>

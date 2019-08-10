@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="crewLisWindow" backgroundColor="transparent" backgroundImage="/images/bg_general.png" title="Crew List" height="100%"  width="100%" >
+		<ScrollView id="scrollView" backgroundColor="transparent" layout="vertical" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="100%" width="100%">        
+        </ScrollView>
+		<LeftNavButton platform="ios">
+			<Button id="leftNavCrew" title="Back"></Button>
+		</LeftNavButton>
+		<View id="anActIndicatorView" class="anActIndicatorView">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

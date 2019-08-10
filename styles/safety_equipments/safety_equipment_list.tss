@@ -1,0 +1,15 @@
+
+".container" : {
+  
+}
+
+".fontBold20" : {
+	font : {
+		fontSize : "20sp",
+		fontWeight : "bold"
+	}
+}
+
+".colorWhite" : {
+	color : "white"
+}

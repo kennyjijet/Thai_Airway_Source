@@ -1,0 +1,25 @@
+".fontSmallLight[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_18pt
+	}
+}
+
+".fontNormalLight[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt
+	}
+}
+
+".fontNormalBold[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontExtraLargeBold[platform=android]" : {
+	font : {
+		fontSize : Alloy.Globals.d_22pt,
+		fontWeight : "bold"
+	}
+}

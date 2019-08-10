@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="logWin" class="container" title="Log">
+		<RightNavButton>
+			<Button title="Clear Log" onClick="onClearLog" />
+		</RightNavButton>
+		
+		<TableView id="logTableView">
+			
+		</TableView>
+		
+		
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101" platform="android">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

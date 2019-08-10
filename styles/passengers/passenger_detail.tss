@@ -1,0 +1,105 @@
+"Label" : {
+	color: "white",
+	font : {
+			fontSize : Alloy.Globals.d_18pt,
+			fontFamily : 'Lucida Grande-Bold',
+			fontWeight : 'bold'
+		},
+}
+
+
+".labelShow" : {
+	color: "white",
+}
+
+
+".LabelShow2" : {
+	color : "#ffcb05",
+	font : {
+		fontWeight : "bold",
+		fontSize : Alloy.Globals.d_22pt
+	},
+}
+
+".subLabelShow" : {
+	color: "white"
+}
+
+".sub2LabelShow" : {
+	color: "white",
+	font:{
+        fontSize: Alloy.Globals.d_14pt,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+".sub3LabelShow" : {
+	color: "white",
+	font:{
+        fontSize: '14sp',
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+".labelMember[platform=ios]" : {
+	 verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	color: "white",
+	font:{
+        fontSize: '15sp',
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+".labelMember[platform=android]" : {
+	 verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	color: "white",
+	font:{
+        fontSize: '15',
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+
+"#applyROP" : {
+	top: "-50%",
+	height: "40%",
+	width:"60%",
+	backgroundGradient: {
+	    type: 'linear',
+	    colors: [{color:'#ffffff',position:0.1},{color:'#ffffff',position:0.50},{color:'#c1c1c1',position:1.0}],
+	    // colors: ['#c1c1c1', '#ffffff'],
+	    backFillStart:false
+	  },
+	right : "15%",
+	borderRadius : '5',
+	borderColor : "white",
+	borderWidth : "2",
+}
+".labelApplyForRop" : {
+	color : '#3D1A6F',
+	font : {
+		fontSize : "18",
+		fontFamily : 'Lucida Grande-Bold',
+		fontWeight : 'bold'
+	},
+}
+
+
+".fontBold17" : {
+	font : {
+		fontSize : Alloy.Globals.d_17pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt
+	}
+}
+
+
+

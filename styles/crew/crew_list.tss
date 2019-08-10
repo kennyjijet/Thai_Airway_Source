@@ -1,0 +1,10 @@
+
+
+".styleFontLabel": {
+	color : "white",
+	font : {
+			fontSize : "20px",
+			fontFamily : 'Lucida Grande-Bold',
+			fontWeight : 'bold'
+		}
+}

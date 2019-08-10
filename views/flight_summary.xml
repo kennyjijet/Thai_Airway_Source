@@ -1,0 +1,27 @@
+<Alloy>
+	<Window id="flightsumWindow" width="100%" height="100%" title="Flight Summary">
+		<View width="100%" height="100%" layout="vertical">
+			<View width="100%" height="8%" layout="vertical" backgroundColor="#26000000">
+				<View width="90%" height="70%" top="15%" layout="horizontal" borderRadius="10" borderColor="white" borderWidth="2">
+					<View id="flightView" width="50%" height="100%" borderColor="white" borderWidth="1" backgroundColor="#80C6168D">
+						<Label id="flightBtn" class="fontBold20 colorWhite" width="100%" height="100%" textAlign="center" color="white" backgroundColor="transparent" onClick="btnFlight">Flight Summary</Label>
+					</View>
+					<View id="feedView" width="49.9%" height="100%" borderColor="white" borderWidth="1" backgroundColor="transparent">
+						<Label id="fbBtn" class="fontBold20 colorWhite" width="100%" height="100%" textAlign="center" color="white" onClick="btnPassengerFB">Passenger Feedback</Label>
+					</View>
+				</View>
+			</View>
+			<TableView id="tableMain" backgroundColor="transparent" width="100%" height="92%">
+				
+			</TableView>
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" platform="android">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+		<RightNavButton>
+            <Button id="eDocument" title="E-Documents" />
+        </RightNavButton>
+	</Window>
+</Alloy>

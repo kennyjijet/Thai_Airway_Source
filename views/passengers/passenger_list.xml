@@ -1,0 +1,102 @@
+<Alloy>
+	<Window id="win" backgroundColor="transparent"  class="container" title="Passenger List" height="100%"  width="100%"  >
+		<View layout="vertical" backgroundColor="transparent"  height="100%"  width="100%" >
+			<View height="8%" width="100%" layout="horizontal" backgroundColor="#26000000" >
+				
+				<View id="bySeat" idType="bySeat" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<View idType="bySeat" height="100%" backgroundColor="transparent">
+						<ImageView id="bySeatImg" backgroundColor="transparent" idType="bySeat" height="60" width="Ti.UI.SIZE" image="/images/btn_seat.png"></ImageView>
+					</View>
+				</View>
+				
+				<View id="byName" idType="byName" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<View idType="byName" height="100%" backgroundColor="transparent">
+						<ImageView id="byNameImg" backgroundColor="transparent" idType="byName" height="60" width="Ti.UI.SIZE" image="/images/btn_name.png"></ImageView>
+					</View>
+				</View>
+				
+				<View id="byRop" idType="byRop" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<View idType="byRop" height="100%" backgroundColor="transparent">
+						<ImageView id="byRopImg" backgroundColor="transparent" idType="byRop" height="60" width="Ti.UI.SIZE" image="/images/btn_rop.png"></ImageView>
+					</View>
+				</View>
+				
+				<View id="SSR" idType="SSR" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<View idType="SSR" height="100%" backgroundColor="transparent">
+						<ImageView id="SSRImg" backgroundColor="transparent" idType="SSR" height="60" width="Ti.UI.SIZE" image="/images/btn_ssr.png"></ImageView>
+					</View>
+				</View>
+				
+				<View id="minimal" idType="minimal" onClick="changeGroup"  height="100%" width="19.5%" backgroundColor="transparent" separatorColor= "transparent">
+					<View idType="bySeat" height="100%" backgroundColor="transparent">
+						<ImageView id="minimalImg" backgroundColor="transparent" idType="minimal" height="60" width="Ti.UI.SIZE" image="/images/btn_connecting_flt.png"></ImageView>
+					</View>
+				</View>
+			</View>
+				
+				<!--
+				<TableView id="bySeat" idType="bySeat" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow id="bySeat" idType="bySeat" backgroundColor="transparent" class="tableViewRow" >
+						<View idType="bySeat" height="100%" backgroundColor="transparent">
+							<ImageView id="bySeatImg" backgroundColor="transparent" idType="bySeat" height="60" width="Ti.UI.SIZE" image="/images/btn_seat.png"></ImageView>
+						</View>
+					</TableViewRow>
+				</TableView>
+				
+				<TableView id="byName" idType="byName" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow idType="byName" class="tableViewRow" >
+						<View idType="byName"  height="100%">
+							<ImageView id="byNameImg" idType="byName" height="60" width="Ti.UI.SIZE" image="/images/btn_name.png"></ImageView>
+						</View>
+					</TableViewRow>
+				</TableView>
+				
+				<TableView id="byRop" idType="byRop" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow  idType="byRop" class="tableViewRow" >
+						<View  idType="byRop" height="100%">
+							<ImageView id="byRopImg" idType="byRop"  height="60" width="Ti.UI.SIZE" image="/images/btn_rop.png"></ImageView>
+						</View>
+					</TableViewRow>
+				</TableView>
+				<TableView id="SSR" idType="SSR" onClick="changeGroup"  height="100%" width="20%" backgroundColor="transparent" separatorColor= "transparent">
+					<TableViewRow  idType="SSR" class="tableViewRow" >
+						<View  idType="SSR" height="100%">
+							<ImageView id="SSRImg" idType="SSR"  height="60" width="Ti.UI.SIZE" image="/images/btn_ssr.png"></ImageView>
+						</View>
+					</TableViewRow>
+				</TableView>
+				<TableView id="minimal" idType="minimal" onClick="changeGroup"  height="100%" width="19.5%" backgroundColor="transparent" separatorColor= "transparent" selectedColor='transparent'>
+					<TableViewRow  idType="minimal" class="tableViewRow" >
+						<View  idType="minimal" height="100%">
+							<ImageView id="minimalImg" idType="minimal"  height="60" width="Ti.UI.SIZE" image="/images/btn_connecting_flt.png"></ImageView>
+						</View>
+					</TableViewRow>
+				</TableView>
+				-->
+			
+			<View id="addBt" backgroundColor="#B6B6B4" height="0" width="100%" layout="vertical" ></View>
+			
+			<View id="searchSec" height="5%" width="100%" backgroundColor="#40000000">
+				<View height="100%" width="7%" left="0" layout="vertical">
+					<ImageView id="searchImg" image="/images/ic_search1.png" top="5" bottom="5" right="5" left="5"></ImageView>
+				</View>
+				<TextField id="customSearchBar" hintTextColor="#CCCCCC" hintText=" (Name),(Dest),Class (Y),(ROP),Infant,Staff,(Main,Upper),(Zone 1)" color="white" backgroundColor="#26000000" borderColor="#7B549C" borderWidth="2" borderRadius = "7" left = "7%" right="5" top="5" bottom="5" ></TextField>
+				<View height="100%" width="7%" right="5">
+					<ImageView id="clearTextBtn" image="/images/ic_clear1.png" width="28" height="28" right="15"></ImageView>
+				</View>
+			</View>
+			
+			<View id="headerSSRList" height="Ti.UI.SIZE" width="100%" backgroundColor="transparent">
+			</View>
+			<TableView backgroundColor="transparent" id="tableView" width="100%" scrollable="true">
+				
+			</TableView>
+		</View>
+		
+		<View id="anActIndicatorView" class="anActIndicatorView" platform="android">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

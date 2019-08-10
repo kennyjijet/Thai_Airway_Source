@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="seatListWindow" title="Next">
+		<TitleControl>
+			<Label>Seat List</Label>
+		</TitleControl>	
+	<!--
+		<View>
+		<Label left="15">Upgrade DB Progress</Label>
+		<ProgressBar id="upgradeDBBar" class="pb_DB"/>
+	</View>
+	-->
+	<!--
+	<View backgroundColor="#3b0059" height="100%" width="100%" zIndex="100">
+		<Label textAlign="center" bottom="55%" color="white">Initialization App</Label>
+		<ActivityIndicator id="activityIndicator" />
+	</View>
+	-->
+		<View class="viewScreen">	
+			<Require src="list_widget" type="widget" id="list_widget"/>
+		</View>
+	</Window>
+</Alloy>

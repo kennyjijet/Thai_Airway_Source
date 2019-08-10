@@ -1,0 +1,28 @@
+<Alloy>
+    <Window id="crewAppraisalFormWindow" backgroundImage="/images/bg_general.png" layout = "vertical" title="Crew Appraisal" height="100%" width = "100%">
+      <View height="4%" width="100%" layout="horizontal">
+          <Label class="fontLargeLight" color="white" height="100%" left="2%">Form # : </Label>
+          <Label id="formNameLabel" class="fontLargeBold" color="#FFCB05" height="100%" left="2%"></Label>
+      </View>  
+      <View height="4%" width="100%" layout="horizontal">
+          <Label class="fontLargeLight" color="white" height="100%" left="2%">Assesee' s Name : </Label>
+          <Label id="asseseeNameLabel" class="fontLargeBold" color="#FFCB05" height="100%" left="2%"></Label>
+      </View>  
+      <ScrollView id="scrollView" showVerticalScrollIndicator="true" layout="vertical" showHorizontalScrollIndicator="false" height="92%" width="100%">
+      </ScrollView>
+      <LeftNavButton >
+            <Button id = "cancleEvaluation" title="Cancel"/>
+      </LeftNavButton>    
+    
+      <RightNavButton>
+            <Button id = "saveEvaluation" title="Save"/>
+      </RightNavButton>    
+
+        <View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+            <View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+                <Label id="anActIndicatorText" class="anActIndicatorText"/>
+            </View>
+        </View>
+
+    </Window>
+</Alloy> 

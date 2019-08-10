@@ -1,0 +1,102 @@
+
+
+".fontBold16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt
+	}
+}
+
+".fontBold20" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold24" : {
+	font : {
+		fontSize : Alloy.Globals.d_24pt,
+		fontWeight : "bold"
+	},
+	color:"#000"
+}
+
+".fontBold25" : {
+	font : {
+		fontSize : Alloy.Globals.d_25pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold30" : {
+	font : {
+		fontSize : Alloy.Globals.d_30pt,
+		fontWeight : "bold"
+	}
+}
+
+".textValue" : {
+	color : "#FFFFFF",
+}
+
+".btnShowDia" : {
+	width : "78",
+	height : "78"
+}
+
+/*
+".btnShowDia" : {
+	width : "100%",
+	height : "100%"
+}
+*/
+".btnFont" : {
+	color : "#C7C7CC",
+	font: { fontSize : Alloy.Globals.d_20pt, }
+}
+
+".scrollViewStyle" : {
+	backgroundColor : "#FFFFFF", 
+	textAlign : "center", 
+	//contentHeight : 'Ti.UI.FILL', 
+	//contentHeight : 'auto', 
+	contentHeight : Ti.UI.SIZE, 
+	contentWidth : "100%",
+	height  : "85%", 
+	width : "100%", 
+	scrollType : 'vertical'
+}
+
+".textValue" : {
+	
+	color : "#FFFFFF",
+	font: { 
+		fontWeight : 'bold',
+		fontSize : Alloy.Globals.d_20pt
+
+	}	
+}
+
+".viewPaxImageRop":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 80,
+	width: 80,
+	height: 50
+}
+
+".viewPaxImageNoRop":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 80,
+	width: 50,
+	height: 50
+}
+

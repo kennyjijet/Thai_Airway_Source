@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="compIrre" title="Problem" backgroundImage="/images/bg_general.png" layout="vertical">
+		<TableView id="table" backgroundColor="transparent" height="Ti.UI.SIZE" scrollable="false" separatorStyle="none">
+			<TableViewRow id="basic" width="100%" height="70" hasChild="true" onClick="btnBasic" backgroundImage="/images/bg_header_section.png">
+				<Label text="Basic Service Error e.g. Spillage" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="defect" width="100%" height="70" hasChild="true" onClick="btnDefect" backgroundImage="/images/bg_header_section.png">
+				<Label text="Defect/Malfunction of seat, light, IFE" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="food" width="100%" height="70" hasChild="true" onClick="btnFood" backgroundImage="/images/bg_header_section.png">
+				<Label text="Food & Beverages" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="other" width="100%" height="70" hasChild="true" onClick="btnOther" backgroundImage="/images/bg_header_section.png">
+				<Label text="Others" color="white" left="20" />
+	    	</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

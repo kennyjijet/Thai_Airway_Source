@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="emergencyDetailWin" class="container" >
+		<View layout="vertical" backgroundColor="#FFF" height="100%"  width="100%" >
+		<View backgroundColor="#B6B6B4" height="5%"  width="100%" >
+			<Button id="backToList" title="back" left="2%" top="20px" ></Button>
+		</View>
+		<View backgroundColor="#B6B6B4" height="5%" width="100%" >
+			<Label id="crewtitle">Emergency detail</Label>
+		</View>
+		<View  width="100%" layout="vertical" >
+			 <ScrollView id="scrollView" layout="vertical" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="100%" width="100%">
+            
+        	</ScrollView>
+		</View>
+		</View>
+	</Window>
+</Alloy>

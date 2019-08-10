@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="syncPromptWin" width="100%" height="100%" backgroundColor="#CC000000" >
+		<View layout="vertical" class="container" height="Ti.UI.SIZE" width="50%" borderRadius="10" backgroundColor="white">
+			<Label class="fontBold24" text="Scheduled Sync" top="10" />
+			
+			<View class="separator" top="10" />
+			
+			<Label id="messagLabel" class="fontLight22" top="10" left="25" right="25" wordWrap="true" text="Scheduled sync is about to start. Press 'Sync' to start synchronization process. Press 'Cancel' to continue work." />
+			
+			<View class="separator" top="10" />
+			
+			<View height="50" width="100%">
+				<View layout="horizontal" width="50%" height="100%" left="0">
+					<Button id="syncButton" onClick="onSync" left="35%" height="Ti.UI.FILL" title="Sync"/>
+					<Label id="countdownLabel"/>
+				</View>
+				<View class="verticalSeparator" />
+				<Button onClick="onCancel" title="Cancel" width="50%" right="0" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

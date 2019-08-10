@@ -1,0 +1,59 @@
+
+".pb" : {
+    //top: 5,
+    width: "80%",
+    height: 100,
+    min: 0,
+    max: 1,
+    value: 0,
+    color: '#8B8D8E',
+    font: {
+    	fontSize: 12, 
+    	fontWeight: 'regular'
+    }
+}
+
+".activityIndicator": {
+	//top: 5,
+	height : "50%",
+  	width : "50%",
+	font: {
+		fontSize: 36,
+		fontWeight: 'regular'
+	},
+	color: "#FFFFFF",
+	style: Ti.UI.ActivityIndicatorStyle.BIG
+}
+
+// ".activityIndicator[platform=ios]": {
+	// //top: 5,
+	// height : "50%",
+  	// width : "50%",
+	// font: {
+		// fontSize: 36,
+		// fontWeight: 'regular'
+	// },
+	// color: "#FFFFFF",
+	// style: Ti.UI.ActivityIndicatorStyle.iphone.BIG
+// }
+// 
+// ".activityIndicator[platform=android]": {
+	// //top: 5,
+	// height : "50%",
+  	// width : "50%",
+	// font: {
+		// fontSize: 36,
+		// fontWeight: 'regular'
+	// },
+	// color: "#FFFFFF",
+	// style: Ti.UI.ActivityIndicatorStyle.ihpone.BIG
+// }
+
+".syncLabel":
+{
+	font: {
+		fontSize: 24,
+		fontWeight: 'regular'
+	},
+	color: "#FFFFFF"
+}

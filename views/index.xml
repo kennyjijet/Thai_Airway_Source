@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="indexWindow" title="Thai Airways" class="container">
+		<View backgroundColor="#3b0059" backgroundImage="images/bg_home.png" height="100%" width="100%" zIndex="100">
+			<View layout="vertical" width="100%" height="Ti.UI.SIZE">
+				<ImageView image="images/logo_tg_thai.png" width="40%" height="Ti.UI.SIZE"/>
+				<ActivityIndicator id="activityIndicator" />
+				<Button id="loginButton" onClick="onLogin" title="Login" visible="false" borderColor="#FFF" borderRadius="15" backgroundColor="#CC000000" color="#FFF" width="30%" height="44" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

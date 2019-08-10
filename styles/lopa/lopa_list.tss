@@ -1,0 +1,199 @@
+
+".textValue" : {
+	color : "#FFFFFF",
+}
+
+
+/*
+".btnShowDia": {
+	width: "80",
+	font: {
+		fontSize: 20
+	},
+	height: "80",
+}
+*/
+
+".fontBold16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt
+	}
+}
+
+".fontBold20" : {
+	font : {
+		fontSize : Alloy.Globals.d_20pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold24" : {
+	font : {
+		fontSize : Alloy.Globals.d_24pt,
+		fontWeight : "bold"
+	},
+	color:"#000"
+}
+
+".fontBold25" : {
+	font : {
+		fontSize : Alloy.Globals.d_25pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold30" : {
+	font : {
+		fontSize : Alloy.Globals.d_30pt,
+		fontWeight : "bold"
+	}
+}
+
+/*
+".btnShowDia" : {
+	width : "100%",
+	height : "100%"
+}
+*/
+
+".btnShowDia" : {
+	width : "78",
+	height : "78"
+}
+
+".btnStyle": {
+	//	borderColor: "black",
+	hasChild: "false",
+	width: "100%",
+	height: "100%"
+}
+
+".btnViewLabel": {
+	font:{
+		fontSize: Alloy.Globals.d_20pt,
+		fontWeight: 'bold'
+	},
+	//	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	textAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	color: "#666666",
+	left: 85
+}
+
+".viewCover":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 10,
+	width: 100,
+	height: 100
+}
+
+".viewPaxImage":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 10,
+	width: 50,
+	height: 50
+}
+
+".viewPaxImageRop":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 80,
+	width: 80,
+	height: 50
+}
+
+".viewPaxImageNoRop":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 80,
+	width: 50,
+	height: 50
+}
+
+".viewPaxImageCheck":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	right: 10,
+	width: 50,
+	height: 50
+}
+
+".viewPax":
+{
+	// font:{
+		// fontSize: 20,
+		// fontWeight: 'bold'
+	// },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color : "#FFFFFF",
+	left: 200,
+	top: 15
+}
+
+".viewPos":
+{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color : "#FFFFFF",
+	left: 205,
+	top: 45
+}
+
+".tableViewLOPA":
+{
+	backgroundColor: "#00FFFFFF",
+	scrollable: "true",
+	height: "65%"
+}
+
+".btnFont": {
+	color: "#FFFFFF",
+}
+
+".tableView": {
+	scrollable: false,
+	backgroundColor: "#00FFFFFF",
+	scrollable: "false",
+	separatorColor: "transparent",
+	showPagingControl: false,
+	scrollingEnabled: false
+}
+
+".tableViewRow": {
+	height: "100%",
+	width: "100%",
+	showPagingControl: false,
+	scrollingEnabled: false,
+	//selectedBackgroundColor: '#d3d3d3',
+	separatorColor: "transparent"
+	//backgroundColor : "#00000000"
+}
+
+
+".imgIconStyle": {
+	width: 40,
+	height: 40,
+	top: 5
+}
+
+".tableButtonView": {
+	scrollable: false,
+	backgroundColor: "#00000000",
+	scrollable: "false",
+	separatorColor: "transparent",
+	showPagingControl: false,
+	scrollingEnabled: false,
+	selectionStyle: 'none',
+	borderColor: 'white',
+	borderWidth: "1"
+	//borderRadius : '10px',
+	//borderColor : 'white',
+	//borderWidth : '2px'
+}

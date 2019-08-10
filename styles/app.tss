@@ -1,0 +1,377 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android,windows]': {
+	color: '#000' // all platforms except Android and Windows default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent or black
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE
+}
+
+*/
+
+
+
+
+".Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#666666"
+}
+
+".TitlePanelLabel": {
+	color: "#FFCC00"
+}
+
+
+
+".container" :
+{
+	//width : Ti.Platform.displayCaps.platformWidth,
+	width : "100%", 
+	height : "100%",
+	//height : Ti.Platform.displayCaps.platformHeight,
+	backgroundColor : "#FFFFFF",
+	
+	/*
+	backgroundColor : "#FFFFFF",
+	width : "Ti.Platform.displayCaps.platformWidth",
+	height : "Ti.Platform.displayCaps.platformHeight"
+	*/
+}
+
+"Window[platform=ios]" : {
+	barColor: "#330066",//"#3b0059",
+	navTintColor: "#F4A4DB",
+	statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT,
+	backgroundColor : "transparent",
+	translucent:true,
+	titleAttributes : {
+		color : "white",//#FFCC00"
+        font : {
+            fontWeight : "bold",
+            fontSize : 19
+        },
+	}
+}
+
+"Window[platform=android]" : {
+	navBarHidden: true,
+	barColor: "#330066",//"#3b0059",
+	navTintColor: "#fff",
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN,
+	backgroundColor : "#FFFFFF",
+	titleAttributes : {
+		color : "white",//#FFCC00"
+        font : {
+            fontWeight : "bold",
+            fontSize : "20sp"
+        },
+	},
+	
+	orientationModes :[
+        Ti.UI.PORTRAIT
+    ]
+}
+
+"ScrollView[platform=IOS]" : {
+	scrollIndicatorStyle: Titanium.UI.iOS.ScrollIndicatorStyle.WHITE
+}
+
+"TableView[platform=IOS]" : {
+	scrollIndicatorStyle: Titanium.UI.iOS.ScrollIndicatorStyle.WHITE
+}
+
+
+".viewScreen" : {
+	width : Ti.Platform.displayCaps.platformWidth, 
+	height : Ti.Platform.displayCaps.platformHeight,
+	layout : "vertical"
+}
+
+".viewScreenWithBackground" : {
+	width : Ti.Platform.displayCaps.platformWidth, 
+	height : Ti.Platform.displayCaps.platformHeight,
+	//backgroundColor : "#3b0059",
+	//layout : "vertical"
+}
+
+".SearchBar" : {
+	showCancel: false,
+	barColor: "#FFF"
+}
+
+".viewTable" :
+{
+	hasChild : "true",
+	width:"100%", 
+	height:"100"	
+}
+
+".viewLabel" :
+{
+	font:{
+		fontSize:20, 
+		fontWeight:'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#666666",
+	left:20	
+}
+
+".viewBorder" :
+{
+	borderColor : "gray",
+	borderWidth : 1
+}
+
+".fontNormalLight" : {
+	font : {
+		fontSize : "18sp",
+	}
+}
+
+".fontSmallLight" : {
+	font : {
+		fontSize : "14sp",
+	}
+}
+
+".fontLargeLight" : {
+	font : {
+		fontSize : "22sp",
+	}
+}
+
+".fontExtraLargeLight" : {
+	font : {
+		fontSize : "28sp",
+	}
+}
+
+".fontNormalBold[platform=ios]" : {
+	font : {
+		fontSize : "18sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontNormalBold[platform=android]" : {
+	font : {
+		fontSize : "18",
+		fontWeight : "bold"
+	}
+}
+
+".fontNormalHBold[platform=android]" : {
+	font : {
+		fontSize : "20",
+		fontWeight : "bold"
+	}
+}
+
+".fontNormalHBold[platform=ios]" : {
+	font : {
+		fontSize : "20sp",
+		fontWeight : "bold"
+	}
+}
+
+
+".fontSmallBold" : {
+	font : {
+		fontSize : "14sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontLargeBold[platform=ios]" : {
+	font : {
+		fontSize : "22sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontLargeBold[platform=android]" : {
+	font : {
+		fontSize : "22",
+		fontWeight : "bold"
+	}
+}
+
+".fontExtraLargeBold" : {
+	font : {
+		fontSize : "28sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold14" : {
+	font : {
+		fontSize : "14sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold15" : {
+	font : {
+		fontSize : "15sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold16" : {
+	font : {
+		fontSize : "16sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold18[platform=ios]" : {
+	font : {
+		fontSize : "18sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold18[platform=android]" : {
+	font : {
+		fontSize : 18,
+		fontWeight : "bold"
+	}
+}
+
+".fontBold20[platform=ios]" : {
+	font : {
+		fontSize : "20sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold20[platform=android]" : {
+	font : {
+		fontSize : "20",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold24" : {
+	font : {
+		fontSize : "24sp",
+		fontWeight : "bold"
+	}
+}
+
+".fontBold28" : {
+	font : {
+		fontSize : "28",
+		fontWeight : "bold"
+	}
+}
+
+".fontLight14" : {
+	font : {
+		fontSize : "14sp"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : "16sp",
+	}
+}
+
+".fontLight18[platform=ios]" : {
+	font : {
+		fontSize : "18sp",
+	}
+}
+
+".fontLight18[platform=android]" : {
+	font : {
+		fontSize : 18,
+	}
+}
+
+".fontLight20" : {
+	font : {
+		fontSize : "20sp",
+	}
+}
+
+".fontLight22" : {
+	font : {
+		fontSize : "22sp",
+	}
+}
+
+".fontLight28" : {
+	font : {
+		fontSize : "28sp",
+	}
+}
+
+".colorWhite" : {
+	color : "white"
+}
+
+".colorGold" : {
+	color : "#FFCB05"
+}
+
+".separator" : {
+	height: '1',
+	width: '100%',
+	backgroundColor: '#C7C6CB'
+}
+
+".verticalSeparator" : {
+	height: '100%',
+	width: '1',
+	backgroundColor: '#C7C6CB'
+}
+
+".activityIndicator": {
+	//top: 5,
+	height : "10%",
+  	width : "10%",
+	font: {
+		fontSize: 36,
+		fontWeight: 'regular'
+	},
+	color: "#FFFFFF",
+	style: Ti.UI.ActivityIndicatorStyle.BIG,
+}
+
+".anActIndicatorView" :
+{
+	width : "100%",
+	height : "100%",
+	backgroundColor : "#000", 
+	opacity : "0.8"
+}
+
+".anActIndicatorText" :
+{
+	font : {
+		fontSize : "18sp",
+		fontWeight : "bold"
+	},
+	text : "Loading..",
+	color : "#FFF"
+}

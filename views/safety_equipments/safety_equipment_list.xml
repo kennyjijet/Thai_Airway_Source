@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="safetyWindow" title="Safety Equipment" backgroundImage="/images/bg_general.png">
+		<View width="100%" height="100%" layout="vertical">
+			<View id='view1' width="100%" height="8%" layout="vertical" backgroundColor="#26000000">
+				<View id="buttonView" width="90%" height="70%" top="15%" layout="horizontal" borderRadius="10" borderColor="white" borderWidth="2">
+					
+				</View>
+			</View>
+			<View id="safetyList" backgroundColor="transparent" width="100%" height="Ti.UI.SIZE">
+				
+			</View>
+		</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

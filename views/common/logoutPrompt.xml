@@ -1,0 +1,21 @@
+<Alloy>
+	<Window id="logoutPromptWin" width="100%" height="100%" backgroundColor="#CC000000" >
+		<View layout="vertical" class="container" height="Ti.UI.SIZE" width="50%" borderRadius="10" backgroundColor="white">
+			<Label id="titleLabel" class="fontBold24" top="10" />
+			
+			<View class="separator" top="10" />
+			
+			<Label id="messageLabel" class="fontLight22" top="10" left="25" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" right="25" wordWrap="true" />
+			
+			<View class="separator" top="10" />
+			
+			<View id="buttonContainer" height="50" width="100%">
+				<Button id="logoutButton" class="fontLight18" onClick="onLogout" width="30%" left="5" title="Logout"/>
+				<View id="vertSep" class="verticalSeparator" left="33%" />
+				<Button id="okButton" class="fontLight18" onClick="onOk" width="30%" left="35%" title="OK"/>
+				<View id="vertSep" class="verticalSeparator" right="33%" />
+				<Button id="cancelButton" class="fontLight18" onClick="onCancel" width="30%" right="5" title="Cancel" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,46 @@
+<Alloy>
+	<Window id="syncWindow" title="Sync" class="container" backgroundImage="/images/bg_general.png">
+		<ScrollView layout="vertical">
+			<!--
+			<View width="100%" height="Ti.UI.SIZE" top="10">
+			<Label left="15">Data Test</Label>
+			<ProgressBar id="dataPb" class="pb"/>
+			</View>
+			<View width="100%" height="Ti.UI.SIZE" top="10">
+			<Label left="15">Aircraft Version</Label>
+			<ProgressBar id="aircraftVersion" class="pb"/>
+			</View>
+			<View width="100%" height="Ti.UI.SIZE">
+			<Label left="15">Zones</Label>
+			<ProgressBar id="zones" class="pb" />
+			</View>
+			<View width="100%" height="Ti.UI.SIZE">
+			<Label left="15">Galleys & LAVs</Label>
+			<ProgressBar id="galley_and_lavs" class="pb"/>
+			</View>
+			<View width="100%" height="Ti.UI.SIZE">
+			<Label left="15">Seats</Label>
+			<ProgressBar id="seats" class="pb"/>
+			</View>
+			<View width="100%" height="Ti.UI.SIZE">
+			<Label left="15">Passengers</Label>
+			<ProgressBar id="passengers" class="pb"/>
+			</View>
+			-->
+			<View width="100%" height="Ti.UI.SIZE" top="0" layout="vertical">
+				<ImageView image="/images/logo_tg_thai.png" width="50%" top="150"></ImageView>
+				<ActivityIndicator id="activityIndicator" top="0" class="activityIndicator" layout="vertical"/>
+				<Label id="progressText" top="0" class="syncLabel">Synchronizing</Label>
+				<ProgressBar id="dataPb" top="0" class="pb"/>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>
+<!--
+<Alloy>
+<Window onOpen="showIndicator" fullscreen="true" backgroundColor="black">
+
+<ActivityIndicator id="activityIndicator" message="Loading..."/>
+</Window>
+</Alloy>
+-->

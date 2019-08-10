@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="webWindow" width="100%" height="100%" title="APPs" layout="vertical" backgroundColor="white" modal="true">
+		<WebView id="webView"/>
+	</Window>
+</Alloy>

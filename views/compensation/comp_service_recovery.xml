@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="compService" title="Service Recovery" backgroundImage="/images/bg_general.png" layout="vertical">
+		<TableView id="table" backgroundColor="transparent" height="Ti.UI.SIZE" scrollable="false" separatorStyle="none">
+			<TableViewRow id="upSeat" width="100%" height="70" hasChild="true" onClick="btnUpSeat" backgroundImage="/images/bg_header_section.png">
+				<Label text="Upgrage Seat" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="mile" width="100%" height="70" hasChild="true" onClick="btnMile" backgroundImage="/images/bg_header_section.png">
+				<Label text="ROP Mileages" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="mpd" width="100%" height="70" hasChild="true" onClick="btnMPD" backgroundImage="/images/bg_header_section.png">
+				<Label text="MPD (Multi Purpose Document)" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="upCer" width="100%" height="70" hasChild="true" onClick="btnUpCer" backgroundImage="/images/bg_header_section.png">
+				<Label text="Upgrade Certificate" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="duty" width="100%" height="70" hasChild="true" onClick="btnDuty" backgroundImage="/images/bg_header_section.png">
+				<Label text="Duty Free" color="white" left="20" />
+	    	</TableViewRow>
+	    	<TableViewRow id="other" width="100%" height="70" hasChild="true" onClick="btnOther" backgroundImage="/images/bg_header_section.png">
+				<Label text="Others" color="white" left="20" />
+	    	</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

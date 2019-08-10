@@ -1,0 +1,107 @@
+// iOS
+"#M2[platform=ios]" : {
+	height : "100%",
+	color: "white",
+	font:{
+        fontSize: 30,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+"Label[platform=ios]" : {
+	color: "#2D2D2D",
+	font:{
+        fontSize: 18,
+        fontFamily: 'arial'
+    }
+}
+
+".LabelShow[platform=ios]" : {
+	color: "white",
+	font:{
+        fontSize: 18,
+        
+    }
+}
+
+".LabelShow2[platform=ios]" : {
+	color:"#FFCB05",
+	font:{
+		fontWeight : "bold",
+        fontSize: 20
+    }
+}
+
+
+"#labelEmergency[platform=ios]" : {
+	color: "#FFD700",
+	font:{
+        fontSize: 23,
+        fontFamily: 'arial'
+    }
+}
+
+
+"#lebelHeaderSection[platform=ios]" : {
+	color: "white",
+	font:{
+       fontSize : 20,
+			// fontFamily : 'Lucida Grande-Bold',
+			fontWeight : 'bold'
+    }
+}
+
+// Android
+"#M2[platform=android]" : {
+	height : "100%",
+	color: "white",
+	font:{
+        fontSize: 26,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+"Label[platform=android]" : {
+	color: "#2D2D2D",
+	font:{
+        fontSize: 18,
+        fontFamily: 'arial'
+    }
+}
+
+".LabelShow[platform=android]" : {
+	color: "white",
+	font:{
+        fontSize: 18,
+        
+    }
+}
+
+".LabelShow2[platform=android]" : {
+	color:"#FFCB05",
+	font:{
+		fontWeight : "bold",
+        fontSize: 18
+    }
+}
+
+
+"#labelEmergency[platform=android]" : {
+	color: "#FFD700",
+	font:{
+        fontSize: 23,
+        // fontFamily: 'arial'
+    }
+}
+
+
+"#lebelHeaderSection[platform=android]" : {
+	color: "white",
+	font:{
+		fontSize : 20,
+			// fontFamily : 'Lucida Grande-Bold',
+		fontWeight : 'bold'
+    }
+}

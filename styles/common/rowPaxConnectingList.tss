@@ -1,0 +1,42 @@
+"#seat" : {
+	color : "white",
+	left : "5%",
+	font : {
+		fontSize : Alloy.Globals.d_25pt,
+		fontWeight : 'bold'
+	},
+	height:"100%",
+	width:"12%",
+}
+
+".labelShow" : {
+	color : "white",
+	font : {
+		fontSize : Alloy.Globals.d_18pt,
+	},
+}
+
+".labelShow2" : {
+	top : "-1",
+	color : "#ffcb05",
+	font : {
+		fontWeight : "bold",
+		fontSize : Alloy.Globals.d_20pt
+	},
+}
+
+".labelShow3" : {
+	color : "white",
+	font : {
+		fontSize : Alloy.Globals.d_16pt,
+	},
+}
+
+".labelShow4" : {
+	top : "-1",
+	color : "#ffcb05",
+	font : {
+		fontWeight : "bold",
+		fontSize : Alloy.Globals.d_18pt
+	},
+}

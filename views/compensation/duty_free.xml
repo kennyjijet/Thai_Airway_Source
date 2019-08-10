@@ -1,0 +1,83 @@
+<Alloy>
+	<Window id="dutyFreeWindow" backgroundImage="/images/bg_general.png" layout = "vertical" title="Duty Free" height="100%" width = "100%">
+		<View layout="vertical" height="100%" width = "100%">
+			<View layout="horizontal" height="8%" width="100%" backgroundColor="transparent" backgroundImage="/images/bg_header_section.png">
+				<Label class = "fontLight18" color="white" height="100%" left="3%" width="170">
+					Problem :
+				</Label>
+				<Label id="problemLabel" class = "fontLargeBold" height="100%" left="0" width="65%" color="#FFCB05">
+					
+				</Label>
+			</View>
+			<View layout="horizontal" height="8%" width="100%" backgroundColor="transparent" backgroundImage="/images/bg_header_section.png">
+				<Label class = "fontLight18" color="white" height="100%" left="3%" width="160">
+					Ref. ISC Form No. :
+				</Label>
+				<Label class = "fontLargeBold" height="100%" left="0" width="10" color="#FF9F33">
+					*
+				</Label>
+				<TextField id = "iscFormNoTextField" class = "fontLargeBold" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="10%" bottom="10%" left="1%" width="71%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >
+				</TextField>
+			</View>
+			<View layout="horizontal" height="8%" width="100%" backgroundColor="transparent" backgroundImage="/images/bg_header_section.png">
+				<Label class = "fontLight18" color="white" height="100%" left="3%" width="160">
+					Item Code No. :
+				</Label>
+				<Label class = "fontLargeBold" height="100%" left="0" width="10" color="#FF9F33">
+					*
+				</Label>
+				<TextField id = "itemCodeNoTextField" class = "fontLargeBold" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="10%" bottom="10%" left="1%" width="71%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >
+				</TextField>
+			</View>
+			<View layout="horizontal" height="8%" width="100%" backgroundColor="transparent" backgroundImage="/images/bg_header_section.png">
+				<Label class = "fontLight18" color="white" height="100%" left="3%" width="160">
+					Unit Price :
+				</Label>
+				<Label class = "fontLargeBold" height="100%" left="0" width="10" color="#FF9F33">
+					*
+				</Label>
+				<TextField id="unitPriceTextField" class = "fontLargeBold" hintText="0" hintTextColor="#7B549C" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="10%" bottom="10%" left="1%" width="25%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >
+				</TextField>
+				<Label id="upToUnitPriceLabel" class = "fontLargeBold" height="100%" left="3%" width="40%" color="red">
+				   
+				</Label>
+			</View>
+			<View id="attachmentView1" layout="vertical" height="12%" width="100%" backgroundImage="/images/bg_header_section.png">
+				<View layout="horizontal" height="100%" width="100%" backgroundColor="transparent">
+					<Label class = "fontLight18" left="3%" height="100%" width="160" color="white">
+						ISC Form :
+					</Label> -->
+					<Label class = "fontLargeBold" height="22" left="0" width="10" color="#FF9F33">
+						*
+					</Label>
+					<ImageView id ="cameraBtn1" backgroundImage="/images/btn_camera4.png" left="1%" height="70" width="70" borderRadius="10" borderColor="white" borderWidth="1">
+					</ImageView>
+					<TextArea id="attachmentTextField1" class = "fontBold18" suppressReturn = "false" borderRadius="5" borderWidth="2" borderColor="#7B549C" color="#FFCB05" top="15%" bottom="15%" left="3%" width="59%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >
+					</TextArea>
+				</View>
+			</View>
+			<View layout="vertical" height="30%" width="100%" backgroundColor="transparent">
+				<Label class = "fontLight18" color="white" height="22" left="3%" top="15%" width="140">
+					Detail :
+				</Label>
+				<TextArea id="detailTextArea" class = "fontBold18" paddingLeft="15" paddingRight="15" borderRadius="5" borderWidth="1" borderColor="#7B549C" color="#FFCB05" top="5%" bottom="5%" left="3%" right="3%" backgroundColor="#26000000" color="#FFCB05" verticalAlign="Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP" textAlign="Titanium.UI.TEXT_ALIGNMENT_LEFT" >
+				</TextArea>
+			</View>
+			<View layout="horizontal" height="25%" width="100%" backgroundColor="transparent">
+				<View layout="vertical" height="100%" width="50%" backgroundColor="transparent">
+					<ImageView id="saveBtn" image = "/images/btn_save.png" top="30%" width = "200" height = "50">
+					</ImageView>
+				</View>
+				<View layout="vertical" height="100%" width="50%" backgroundColor="transparent">
+					<ImageView id="cancelBtn" image = "/images/btn_cancel.png" top="30%" width = "200" height = "50">
+					</ImageView>
+				</View>
+			</View>
+		</View>
+        <View id="anActIndicatorView" class="anActIndicatorView">
+            <View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+                <Label id="anActIndicatorText" class="anActIndicatorText"/>
+            </View>
+        </View>
+	</Window>
+</Alloy> 

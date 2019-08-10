@@ -1,0 +1,88 @@
+<Alloy>
+	<Window id="lopaListWindow" title="Seat List" backgroundImage="/images/bg_general.png">
+		 <View id='view1' width="Ti.UI.FILL" layout="vertical" height="100%" >
+	     <View id="selectionHeaderView" top="5" width="Ti.UI.FILL" height="10%">
+			<View id="leftHeaderView" left="5" top="5" width="40%" height="Ti.UI.SIZE">
+				<View layout="horizontal" width="100%" height="Ti.UI.SIZE">
+					<ImageView id="imageFlightLopa" top="0" left="20" image="/images/flight_lopa.png" width="15%"/>
+					<View id="leftTextLine" layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+						<Label id="aircraft_type" left="10" text="" class="fontBold20" color="#FFFFFF" />
+						<Label id="aircraftRegistration" left="10" text="TG 9676 A380-800" class="fontBold20" color="#FFFFFF" />
+						<Label id="titleName" left="10" class="fontBold16" color="#FFFFFF" ></Label>
+						<!--<Label id="titleName" left="10" class="fontBold24" color="#FFFFFF" minimumFontSize="7" width='auto' height='auto'></Label>-->
+						<!--  <View class="class1 class2" /> -->
+						<!--<Label id="lopaInformationLabel" left="10" text="" class="fontBold18" color="#FFFFFF" />-->
+					</View>
+				</View>
+			</View>
+			
+			<View top="5" bottom="10" width="10%">
+				<View layout="vertical" width="100%" height="100%">
+					<Button id="btnSelectZone" backgroundImage="/images/select_zone.png" class="btnShowDia"/>
+				</View>
+			</View>
+			
+			<View id="rightHeaderView" right="5" top="5" width="40%" height="Ti.UI.SIZE">
+				<View layout="horizontal" width="100%" height="Ti.UI.SIZE">
+					<ImageView id="imageFloorLopa" top="0" left="40" image="/images/floor_lopa.png" width="15%"/>
+					<View layout="vertical" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+						<Label id="titleLabel" left="10" text="" class="fontBold20" color="#FFFFFF"></Label>
+						<View layout="horizontal" left="10" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+							<Label id="total" text="" class="fontBold20" color="#FFFFFF"/>
+							<Label id="currentPax" left="2" text="" class="fontBold20" color="#FFCB05"/>
+							<Label id="totalPA" left="2" text="" class="fontBold20" color="#FFFFFF"/>
+						</View>
+						
+						<View layout="horizontal" left="10" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+							<Label id="totalIncidentText" left="2" text="" class="fontBold16" color="#FFFFFF"/>
+							<Label id="totalIncidentValue" left="2" text="" class="fontBold16" color="#FFFFFF"/>
+						</View>
+						<!--<Label id="totalPA" left="10" text="" class="fontBold24" color="#FFFFFF"/>-->
+					</View>
+				</View>
+			</View>
+		</View>
+		
+	     <View id="threeBtnGroup" top="10" backgroundColor="#00FFFFFF" height="8%" width="100%">
+			<View id="threeGroupButtons" height="60%" width="90%" layout="horizontal" borderRadius="5" borderWidth="2" borderColor="white">
+				<View id="tableViewBtn1" height="100%" width="33.33%" class="tableButtonView" idType="all">
+					<Label id="allLabel" color="#FFFFFF" class="fontBold20">All</Label>
+				</View>
+				
+				<View id="tableViewBtn2" height="100%" width="33.33%" class="tableButtonView" idType="byPassenger">
+					<Label id="passengerLabel" color="#FFFFFF" class="fontBold20">Passenger</Label>
+				</View>	
+				
+				<View id="tableViewBtn3" height="100%" width="33.33%" class="tableButtonView" idType="byAvailable">
+					<Label id="availableLabel" color="#FFFFFF" class="fontBold20">Available</Label>
+				</View>		
+			</View>
+		</View>
+		 	<View layout="horizontal" width="Ti.UI.FILL" height="Ti.UI.SIZE" backgroundColor="#40000000">	
+	     		<View id="searchSec" layout="vertical" height="60">
+	     			<Require src="custom_searchbar" type="widget" id="custom_searchbar"/>
+	     		</View>
+	     	</View>
+	     	<TableView id="lopaItem" class="tableViewLOPA" hasChild='true'>
+			  	     			
+			</TableView>
+	     </View>
+	     <View id="selectionView" layout="horizontal" bottom="0" width="Ti.UI.FILL" height="8%" backgroundColor="#EDEDED">
+				<View width="100%" height="100%" layout="horizontal">
+					<View width="50%" height="100%" top='0'>
+						<ImageView id="buttonCreateIncident" width="50%" height="100%" image="/images/btn_create_incident_dis.png"/>
+						<!--<Label id="buttonCreateIncident" width="Ti.UI.SIZE" text="Create Incident" class="btnFont"/>-->
+					</View>
+					<View width="50%" height="100%">
+						<ImageView id="buttonCancel" width="50%" height="100%" image="/images/btn_cancel_dis.png"/>
+						<!--<Label id="buttonCancel" width="Ti.UI.SIZE" text="Cancel" class="btnFont"/>-->
+					</View>
+				</View>
+			</View>
+		<View id="anActIndicatorView" class="anActIndicatorView" zIndex="101">
+			<View width='Ti.UI.SIZE' height="Ti.UI.SIZE" touchEnabled="false" layout="vertical">
+				<Label id="anActIndicatorText" class="anActIndicatorText"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,36 @@
+<Alloy>
+			<TableViewRow hasChild="true" backgroundColor="transparent" selectedBackgroundColor= "33ffffff" height ="Ti.UI.SIZE" id="tableRow">
+				<View id="viewId" layout="horizontal" backgroundColor="transparent" height="Ti.UI.SIZE">
+						<ImageView image="" height="50" width="80" left="2%" id="image"></ImageView>
+						<Label id="seat" height="50">35G</Label>
+						<View id="viewDetail" layout="vertical" height="Ti.UI.SIZE" bottom="5">
+							<Label  id="name" class="labelShow2" left="0" top="10" height="30" width="100%">LastName FirstNamexxxxxxxxx</Label>
+							<View id="subViewId" top="5" layout="horizontal" height="20" >
+								<Label id="labelRop" class="labelShow" width="50">ROP :</Label>
+								<Label id="rop" class="labelShow2" width="110"></Label>
+								<Label id="classP" class="labelShow" width="60">Class : </Label>
+								<Label id="paxClass" class="labelShow2" width="110">C</Label>
+								<Label id="dest" class="labelShow" width="55">Dest : </Label>
+								<Label id="destination" class="labelShow2" ></Label>
+							</View>
+							<View id="infantView" top="5" layout="horizontal" height="25">
+								<Label id="labelInfant" top="0" class="labelShow" width="65">Infant : </Label>
+								<Label id="infant" top="-2" class="labelShow2" ></Label>
+							</View>
+							<View id="thirdViewId" top="5" layout="horizontal" height="20" >
+								<Label id="flightId" class="labelShow3" width="50">Flight:</Label>
+								<Label id="conFlight" class="labelShow4" width="80"></Label>
+								<Label id="dateId" class="labelShow3" width="45">Date:</Label>
+								<Label id="conDate" class="labelShow4" width="73">C</Label>
+								<Label id="segmentId" class="labelShow3" width="75">Segment:</Label>
+								<Label id="conSegment" class="labelShow4" width="92"></Label>
+								<Label id="stdId" class="labelShow3" width="40">STD:</Label>
+								<Label id="conSTD" class="labelShow4" ></Label>
+							</View>
+						</View>
+				</View>
+				<View backgroundImage="images/ic_staff.png" zIndex="100" id="staff" right="0" top="5" height="25" width="55" visible="false">
+					
+				</View>
+			</TableViewRow>
+</Alloy>

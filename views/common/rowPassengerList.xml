@@ -1,0 +1,32 @@
+<Alloy>
+			<TableViewRow id="tableRow" hasChild="true" backgroundColor="transparent" backgroundSelectedColor= "33ffffff" height ="150">
+				<View id="viewId" width="100%" backgroundColor="transparent">
+						<View id="cardViewId" width="19%" height="100%">
+							<ImageView image="" height="50" width="80" left="2%" id="image"></ImageView>
+						</View>
+						<View id="seatViewId" width="9%" height="100%">
+							<Label id="seat" height="50">35G</Label>
+						</View>
+						<View id="descriptionViewId" width="72%" height="100%">
+							<View layout="vertical" width="100%">
+								<Label id="name" class="labelShow2"  top="15" height="30%" width="100%">LastName FirstNamexxxxxxxxx</Label>
+								<View id="subViewId" width="100%" top="5" layout="horizontal" height="Ti.UI.SIZE" >
+									<Label id="labelRop" class="labelShow" width="50">ROP :</Label>
+									<Label id="rop" class="labelShow2" width="110"></Label>
+									<Label id="classP" class="labelShow" width="60">Class : </Label>
+									<Label id="paxClass"  class="labelShow2" width="110">C</Label>
+									<Label id="dest" class="labelShow" width="55">Dest : </Label>
+									<Label id="destination"  class="labelShow2" ></Label>
+								</View>
+								<View id="infantViewId" top="5" layout="horizontal" width="100%" height="25%">
+									<Label id="labelInfant" top="0" class="labelShow" width="65">Infant : </Label>
+									<Label id="infant" top="-2" class="labelShow2" ></Label>
+								</View>
+							</View>
+						</View>
+				</View>
+				<View backgroundImage="/images/ic_staff.png" zIndex="100" id="staff"  right="0" top="5" height="25" width="55" visible="false">
+					
+				</View>
+			</TableViewRow>
+</Alloy>

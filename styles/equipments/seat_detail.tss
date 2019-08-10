@@ -1,0 +1,62 @@
+"Label" : {
+	color: "#2D2D2D",
+	font:{
+        fontSize: '18sp',
+        fontFamily: 'arial'
+    }
+}
+
+".labelShow" : {
+	color: "white",
+	font:{
+        fontSize: '25sp',
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+".subLabelShow" : {
+	color: "white",
+	font:{
+        fontSize: Alloy.Globals.d_25pt,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+".sub2LabelShow" : {
+	color: "white",
+	font:{
+        fontSize: Alloy.Globals.d_18pt,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+".sub3LabelShow" : {
+	color: "white",
+	font:{
+        fontSize: Alloy.Globals.d_14pt,
+        fontFamily: 'arial',
+         fontWeight: 'bold'
+    }
+}
+
+
+
+".fontBold17" : {
+	font : {
+		fontSize : Alloy.Globals.d_17pt,
+		fontWeight : "bold"
+	}
+}
+
+".fontLight16" : {
+	font : {
+		fontSize : Alloy.Globals.d_16pt
+	}
+}
+
+
+
+

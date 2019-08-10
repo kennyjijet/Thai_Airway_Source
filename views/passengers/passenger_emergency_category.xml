@@ -1,0 +1,9 @@
+<Alloy>
+    <Window id="paxEmergencyCateWindow" layout = "vertical" title="Create Emergency Report">
+        <View layout="vertical" height="100%">
+            <View layout="vertical" height="100%" backgroundColor="transparent">
+                <TableView id="emergencyCategoryListTableView" backgroundColor="transparent" scrollable="true" height="100%" layout="vertical"></TableView>
+            </View>
+        </View>
+    </Window>
+</Alloy>
