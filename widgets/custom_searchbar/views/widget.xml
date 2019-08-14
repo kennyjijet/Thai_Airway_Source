@@ -1,0 +1,12 @@
+<Alloy>
+	<View height="100%" width="100%" backgroundColor="#40000000">
+		<View height="100%" width="7%" left="0" layout="vertical">
+			<ImageView id="searchImg" image="/images/ic_search1.png" top="5" bottom="5" right="5" left="5"></ImageView>
+		</View>
+		<TextField id="customSearchBar"  hintTextColor="#CCCCCC" hintText="" paddingLeft="5" paddingRight="5" color="white" backgroundColor="#26000000" borderColor="#7B549C" borderWidth="2" borderRadius = "7" left = "7%" right="5" top="5" bottom="5" ></TextField>
+		<View height="100%" width="7%" right="5">
+			<ImageView id="clearTextBtn" image="/images/ic_clear1.png" width="28" height="28" right="15"></ImageView>
+		</View>
+	</View>
+</Alloy>
+

@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="multiple_seat_function" layout="horizontal">
+		<View top="0" width="50%" height="100%">
+			<ImageView top="0" id="msMultiSelection" width="50%" height="100%"/>
+		</View>
+		<View top="0" width="50%" height="100%">
+			<ImageView top="0" id="buttonRight" width="50%" height="100%"/>
+		</View>
+	</View>	
+</Alloy>

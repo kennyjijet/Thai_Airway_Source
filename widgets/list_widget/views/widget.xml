@@ -1,0 +1,15 @@
+<Alloy>
+
+	<View id="list1View" class="viewScreen" backgroundColor="#FFFFFF" layout="vertical">
+		<View height="5%" width="100%">
+			<Label id="label" class="viewLabel"></Label><Button id="doneBtn" color="#3498DB" right="2%" title="Done" />
+		</View>
+		<SearchBar id="searchBar" class="SearchBar" platform="ios" showCancel="true" />
+		<SearchView id="searchView" class="SearchBar" ns="Ti.UI.Android" platform="android" color ="black" width="100%" />
+		
+		<TableView id="tableView" scrollable="true" height="Ti.UI.SIZE">
+			
+		</TableView>
+	
+	</View>
+</Alloy>

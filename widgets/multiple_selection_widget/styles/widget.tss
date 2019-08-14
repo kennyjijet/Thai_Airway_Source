@@ -1,0 +1,44 @@
+".btn" : {
+	top : "10", 
+	height : "20",
+	font: { fontSize: 20 }
+}
+
+".btnShowDia" : {
+	top : "10", 
+	width : Ti.UI.FILL, 
+	height : "5%",
+	font: { fontSize: 20 }
+}
+
+".btnFont" : {
+	color : "#C7C7CC",
+	font: { fontSize: 20 }
+}
+
+".scrollViewStyle" : { 
+	textAlign : "center", 
+	contentHeight : 'auto', 
+	height  : "75%", 
+	width : Ti.UI.FILL, 
+	top : "10", 
+	backgroundImage : "/images/grey.png"
+}
+
+
+".tableView": {
+	scrollable: false,
+	scrollable: "false",
+	separatorColor: "transparent",
+	showPagingControl: false,
+	scrollingEnabled: false,
+	backgroundColor : "#00000000"
+}
+
+".tableViewRow": {
+	height: "100%",
+	width: "100%",
+	showPagingControl: false,
+	scrollingEnabled: false
+}
+
